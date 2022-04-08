@@ -17,13 +17,13 @@
                BlueprintIdentifier = "F358592A28004C7300E3C597"
                BuildableName = "Squad.app"
                BlueprintName = "Squad"
-               ReferencedContainer = "container:Squad.xcodeproj">
+               ReferencedContainer = "container:Squad/Squad.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "F358594028004C7400E3C597"
                BuildableName = "SquadTests.xctest"
                BlueprintName = "SquadTests"
-               ReferencedContainer = "container:Squad.xcodeproj">
+               ReferencedContainer = "container:Squad/Squad.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,13 +45,13 @@
                BlueprintIdentifier = "F358594B28004C7400E3C597"
                BuildableName = "SquadUITests.xctest"
                BlueprintName = "SquadUITests"
-               ReferencedContainer = "container:Squad.xcodeproj">
+               ReferencedContainer = "container:Squad/Squad.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = ""
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
@@ -67,7 +67,7 @@
             BlueprintIdentifier = "F358592A28004C7300E3C597"
             BuildableName = "Squad.app"
             BlueprintName = "Squad"
-            ReferencedContainer = "container:Squad.xcodeproj">
+            ReferencedContainer = "container:Squad/Squad.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -84,12 +84,12 @@
             BlueprintIdentifier = "F358592A28004C7300E3C597"
             BuildableName = "Squad.app"
             BlueprintName = "Squad"
-            ReferencedContainer = "container:Squad.xcodeproj">
+            ReferencedContainer = "container:Squad/Squad.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Release">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
