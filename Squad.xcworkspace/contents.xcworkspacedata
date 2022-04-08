@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:Squad/Squad.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Frameworks/SquadStyle/SquadStyle.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Frameworks/SquadComponent/SquadComponent.xcodeproj">
+   </FileRef>
+</Workspace>
