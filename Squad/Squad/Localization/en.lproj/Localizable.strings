@@ -6,3 +6,6 @@
   
 */
 
+/* Error String */
+"error.network.baseurl.notfound" = "Please reinstall the application.";
+"error.network.noresponse" = "Something went wrong, Please try it later.";
