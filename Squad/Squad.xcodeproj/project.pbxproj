@@ -15,8 +15,6 @@
 		F358593B28004C7400E3C597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F358593928004C7400E3C597 /* LaunchScreen.storyboard */; };
 		F358594628004C7400E3C597 /* SquadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358594528004C7400E3C597 /* SquadTests.swift */; };
 		F358595128004C7400E3C597 /* SquadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358595028004C7400E3C597 /* SquadUITests.swift */; };
-		F358598828004F4700E3C597 /* SquadStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F358598728004F4700E3C597 /* SquadStyle.framework */; };
-		F35859B02800523800E3C597 /* SquadComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; };
 		F35859CF2800770800E3C597 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F35859D12800770800E3C597 /* Localizable.strings */; };
 		F35859D92800780500E3C597 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859D82800780500E3C597 /* StringExtension.swift */; };
 		F35859DB28007ACC00E3C597 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859DA28007ACC00E3C597 /* People.swift */; };
@@ -76,6 +74,21 @@
 		F3585A852802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */; };
 		F3585A862802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */; };
 		F3585A872802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */; };
+		F3585A8B28030A8900E3C597 /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358593228004C7300E3C597 /* RoomListViewController.swift */; };
+		F3585A8C28030A8900E3C597 /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358593228004C7300E3C597 /* RoomListViewController.swift */; };
+		F3585A8E280324C000E3C597 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A8D280324BF00E3C597 /* Box.swift */; };
+		F3585A8F280324C000E3C597 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A8D280324BF00E3C597 /* Box.swift */; };
+		F3585A90280324C000E3C597 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A8D280324BF00E3C597 /* Box.swift */; };
+		F3585A9228032BF800E3C597 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A9128032BF800E3C597 /* PeopleTableViewCell.swift */; };
+		F3585A9328032BF800E3C597 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A9128032BF800E3C597 /* PeopleTableViewCell.swift */; };
+		F3585A9428032BF800E3C597 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A9128032BF800E3C597 /* PeopleTableViewCell.swift */; };
+		F3585A962803300D00E3C597 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A952803300D00E3C597 /* UITableViewExtension.swift */; };
+		F3585A972803300D00E3C597 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A952803300D00E3C597 /* UITableViewExtension.swift */; };
+		F3585A982803300D00E3C597 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A952803300D00E3C597 /* UITableViewExtension.swift */; };
+		F3B8049C2803431600BAC810 /* SquadStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F358598728004F4700E3C597 /* SquadStyle.framework */; };
+		F3B8049D2803431600BAC810 /* SquadStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F358598728004F4700E3C597 /* SquadStyle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3B96C56280344AA00BFEA22 /* SquadComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; };
+		F3B96C57280344AA00BFEA22 /* SquadComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +107,21 @@
 			remoteInfo = Squad;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3B8049B2803431400BAC810 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F3B8049D2803431600BAC810 /* SquadStyle.framework in Embed Frameworks */,
+				F3B96C57280344AA00BFEA22 /* SquadComponent.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F358592B28004C7300E3C597 /* Squad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squad.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +162,9 @@
 		F3585A7C2802DC9A00E3C597 /* Room.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Room.storyboard; sourceTree = "<group>"; };
 		F3585A802802DCAE00E3C597 /* People.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = People.storyboard; sourceTree = "<group>"; };
 		F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		F3585A8D280324BF00E3C597 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		F3585A9128032BF800E3C597 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		F3585A952803300D00E3C597 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +172,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F358598828004F4700E3C597 /* SquadStyle.framework in Frameworks */,
-				F35859B02800523800E3C597 /* SquadComponent.framework in Frameworks */,
+				F3B8049C2803431600BAC810 /* SquadStyle.framework in Frameworks */,
+				F3B96C56280344AA00BFEA22 /* SquadComponent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +301,7 @@
 			children = (
 				F3585A0A280098A500E3C597 /* Constants */,
 				F35859D7280077ED00E3C597 /* Extensions */,
+				F3585A8D280324BF00E3C597 /* Box.swift */,
 			);
 			path = Utiles;
 			sourceTree = "<group>";
@@ -290,6 +322,7 @@
 				F3585A132800FE5800E3C597 /* DateFormatterExtension.swift */,
 				F3585A782802DA6300E3C597 /* StoryboardExtension.swift */,
 				F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */,
+				F3585A952803300D00E3C597 /* UITableViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -335,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				F35859F828008F0E00E3C597 /* PeopleListViewController.swift */,
+				F3585A9128032BF800E3C597 /* PeopleTableViewCell.swift */,
 				F3585A802802DCAE00E3C597 /* People.storyboard */,
 			);
 			path = View;
@@ -409,6 +443,7 @@
 				F358592728004C7300E3C597 /* Sources */,
 				F358592828004C7300E3C597 /* Frameworks */,
 				F358592928004C7300E3C597 /* Resources */,
+				F3B8049B2803431400BAC810 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -547,10 +582,12 @@
 				F35859F928008F0E00E3C597 /* PeopleListViewController.swift in Sources */,
 				F35859FE280090BB00E3C597 /* NetworkManager.swift in Sources */,
 				F3585A792802DA6300E3C597 /* StoryboardExtension.swift in Sources */,
+				F3585A962803300D00E3C597 /* UITableViewExtension.swift in Sources */,
 				F3585A712802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */,
 				F358593328004C7300E3C597 /* RoomListViewController.swift in Sources */,
 				F35859DF28007CDD00E3C597 /* Room.swift in Sources */,
 				F358592F28004C7300E3C597 /* AppDelegate.swift in Sources */,
+				F3585A8E280324C000E3C597 /* Box.swift in Sources */,
 				F35859EC280087CC00E3C597 /* PeopleViewModel.swift in Sources */,
 				F3585A072800987000E3C597 /* BundleExtension.swift in Sources */,
 				F3585A1C28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */,
@@ -561,6 +598,7 @@
 				F3585A852802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */,
 				F35859DB28007ACC00E3C597 /* People.swift in Sources */,
 				F35859F0280087ED00E3C597 /* RoomViewModel.swift in Sources */,
+				F3585A9228032BF800E3C597 /* PeopleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,12 +613,16 @@
 				F3585A862802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */,
 				F35859DC28007ACC00E3C597 /* People.swift in Sources */,
 				F3585A04280092B000E3C597 /* SquadError.swift in Sources */,
+				F3585A9328032BF800E3C597 /* PeopleTableViewCell.swift in Sources */,
 				F35859FF280090BB00E3C597 /* NetworkManager.swift in Sources */,
 				F35859ED280087CC00E3C597 /* PeopleViewModel.swift in Sources */,
+				F3585A8F280324C000E3C597 /* Box.swift in Sources */,
+				F3585A972803300D00E3C597 /* UITableViewExtension.swift in Sources */,
 				F358594628004C7400E3C597 /* SquadTests.swift in Sources */,
 				F35859E028007CDD00E3C597 /* Room.swift in Sources */,
 				F3585A152800FE5800E3C597 /* DateFormatterExtension.swift in Sources */,
 				F3585A722802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */,
+				F3585A8B28030A8900E3C597 /* RoomListViewController.swift in Sources */,
 				F3585A762802CAC800E3C597 /* SquadNavigationController.swift in Sources */,
 				F3585A7A2802DA6300E3C597 /* StoryboardExtension.swift in Sources */,
 				F3585A0D2800996C00E3C597 /* AppConstants.swift in Sources */,
@@ -598,12 +640,16 @@
 				F3585A872802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */,
 				F35859DD28007ACC00E3C597 /* People.swift in Sources */,
 				F3585A05280092B000E3C597 /* SquadError.swift in Sources */,
+				F3585A9428032BF800E3C597 /* PeopleTableViewCell.swift in Sources */,
 				F3585A00280090BB00E3C597 /* NetworkManager.swift in Sources */,
 				F35859EE280087CC00E3C597 /* PeopleViewModel.swift in Sources */,
+				F3585A90280324C000E3C597 /* Box.swift in Sources */,
+				F3585A982803300D00E3C597 /* UITableViewExtension.swift in Sources */,
 				F358595128004C7400E3C597 /* SquadUITests.swift in Sources */,
 				F35859E128007CDD00E3C597 /* Room.swift in Sources */,
 				F3585A162800FE5800E3C597 /* DateFormatterExtension.swift in Sources */,
 				F3585A732802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */,
+				F3585A8C28030A8900E3C597 /* RoomListViewController.swift in Sources */,
 				F3585A772802CAC800E3C597 /* SquadNavigationController.swift in Sources */,
 				F3585A7B2802DA6300E3C597 /* StoryboardExtension.swift in Sources */,
 				F3585A0E2800996C00E3C597 /* AppConstants.swift in Sources */,
@@ -707,7 +753,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -784,6 +830,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vm.Squad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -808,6 +855,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vm.Squad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

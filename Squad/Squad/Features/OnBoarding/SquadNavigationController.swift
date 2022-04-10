@@ -10,6 +10,8 @@ import SquadStyle
 
 class SquadNavigationController: UINavigationController {
 
+    //MARK:- View Controller Life Cycle Methods - 
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

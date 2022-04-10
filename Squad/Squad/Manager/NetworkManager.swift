@@ -21,7 +21,7 @@ enum RequestType {
 
 struct NetworkManager {
 
-    func fetch<T: Codable>(requestType: RequestType, responseType: T.Type,handler: @escaping (Result<T, Error>) -> Void)  {
+    func fetch<T: Codable>(requestType: RequestType, responseType: T.Type, handler: @escaping (Result<T, Error>) -> Void)  {
         
         guard let baseURLPath = Bundle.main.baseURL, let baseURL = URL(string: baseURLPath) else {
             handler(.failure(SquadError(description: "error.network.baseurl.notfound".localized)))
@@ -29,6 +29,7 @@ struct NetworkManager {
         }
         
         let requestURL = baseURL.appendingPathComponent(requestType.path)
+    
         let dataTasks = URLSession.shared.dataTask(with: requestURL) { (data, _, error) in
             guard let responseData = data else {
                 handler(.failure(error ?? SquadError(description: "error.network.noresponse".localized)))

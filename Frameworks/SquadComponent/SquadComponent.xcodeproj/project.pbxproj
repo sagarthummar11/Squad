@@ -10,8 +10,6 @@
 		F358599F2800521400E3C597 /* SquadComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35859952800521400E3C597 /* SquadComponent.framework */; };
 		F35859A42800521400E3C597 /* SquadComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859A32800521400E3C597 /* SquadComponentTests.swift */; };
 		F35859A62800521400E3C597 /* SquadComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = F35859982800521400E3C597 /* SquadComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3585A692802BD9200E3C597 /* SquadStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3585A682802BD9200E3C597 /* SquadStyle.framework */; };
-		F3585A6A2802BD9200E3C597 /* SquadStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3585A682802BD9200E3C597 /* SquadStyle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F3585A6E2802BDD300E3C597 /* SquadComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A6D2802BDD300E3C597 /* SquadComponents.swift */; };
 		F3585A6F2802BDD300E3C597 /* SquadComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A6D2802BDD300E3C597 /* SquadComponents.swift */; };
 /* End PBXBuildFile section */
@@ -25,20 +23,6 @@
 			remoteInfo = SquadComponent;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F3585A6B2802BD9200E3C597 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F3585A6A2802BD9200E3C597 /* SquadStyle.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F35859952800521400E3C597 /* SquadComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SquadComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3585A692802BD9200E3C597 /* SquadStyle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +130,6 @@
 				F35859912800521400E3C597 /* Sources */,
 				F35859922800521400E3C597 /* Frameworks */,
 				F35859932800521400E3C597 /* Resources */,
-				F3585A6B2802BD9200E3C597 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

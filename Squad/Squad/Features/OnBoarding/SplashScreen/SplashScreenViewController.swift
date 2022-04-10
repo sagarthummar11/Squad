@@ -10,6 +10,8 @@ import SquadStyle
 
 class SplashScreenViewController: UIViewController {
 
+    //MARK: - View Life Cycle Methods -
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

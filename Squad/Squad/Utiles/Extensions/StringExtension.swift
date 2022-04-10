@@ -10,6 +10,10 @@ import Foundation
 extension String {
     
     var localized: String {
-        return NSLocalizedString(self, comment: "")
+        NSLocalizedString(self, comment: "")
+    }
+    
+    func trimmed() -> String {
+        self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }

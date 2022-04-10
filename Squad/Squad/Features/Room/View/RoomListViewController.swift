@@ -10,21 +10,29 @@ import SquadStyle
 
 class RoomListViewController: UIViewController {
 
+    //MARK:- Properties -
+    fileprivate let roomTabItem = {
+        UITabBarItem(title: "Room", image: nil, selectedImage: nil)
+    }()
+    
+    //MARK:- View Controller Life Cycle Methods - 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchRooms()
+        
+        configureView()
     }
 
-    func fetchRooms() {
-        NetworkManager().fetch(requestType: .roomList, responseType: [Room].self) { result in
-            switch result {
-            case .success(let peopleList):
-                print(peopleList)
-            case .failure(let error):
-                print(error)
-            }
-        }
+    //MARK: - View Configuration Methods -
+    private func configureView() {
+    
     }
-
 }
 
+//MARK:- RoomListViewController TabDetailsProtocol Cofirmation -
+extension RoomListViewController: TabDetailsProtocol {
+    
+    var tabItem: UITabBarItem {
+        roomTabItem
+    }
+}
