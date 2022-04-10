@@ -10,17 +10,15 @@
 		F358592F28004C7300E3C597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358592E28004C7300E3C597 /* AppDelegate.swift */; };
 		F358593128004C7300E3C597 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358593028004C7300E3C597 /* SceneDelegate.swift */; };
 		F358593328004C7300E3C597 /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358593228004C7300E3C597 /* RoomListViewController.swift */; };
-		F358593628004C7300E3C597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F358593428004C7300E3C597 /* Main.storyboard */; };
+		F358593628004C7300E3C597 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F358593428004C7300E3C597 /* Onboarding.storyboard */; };
 		F358593828004C7400E3C597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F358593728004C7400E3C597 /* Assets.xcassets */; };
 		F358593B28004C7400E3C597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F358593928004C7400E3C597 /* LaunchScreen.storyboard */; };
 		F358594628004C7400E3C597 /* SquadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358594528004C7400E3C597 /* SquadTests.swift */; };
 		F358595128004C7400E3C597 /* SquadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358595028004C7400E3C597 /* SquadUITests.swift */; };
 		F358598828004F4700E3C597 /* SquadStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F358598728004F4700E3C597 /* SquadStyle.framework */; };
-		F358598928004F4700E3C597 /* SquadStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F358598728004F4700E3C597 /* SquadStyle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F35859B02800523800E3C597 /* SquadComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; };
-		F35859B12800523800E3C597 /* SquadComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F35859CF2800770800E3C597 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F35859D12800770800E3C597 /* Localizable.strings */; };
-		F35859D92800780500E3C597 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859D82800780500E3C597 /* String+Extension.swift */; };
+		F35859D92800780500E3C597 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859D82800780500E3C597 /* StringExtension.swift */; };
 		F35859DB28007ACC00E3C597 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859DA28007ACC00E3C597 /* People.swift */; };
 		F35859DC28007ACC00E3C597 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859DA28007ACC00E3C597 /* People.swift */; };
 		F35859DD28007ACC00E3C597 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859DA28007ACC00E3C597 /* People.swift */; };
@@ -48,15 +46,36 @@
 		F3585A03280092B000E3C597 /* SquadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A02280092B000E3C597 /* SquadError.swift */; };
 		F3585A04280092B000E3C597 /* SquadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A02280092B000E3C597 /* SquadError.swift */; };
 		F3585A05280092B000E3C597 /* SquadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A02280092B000E3C597 /* SquadError.swift */; };
-		F3585A072800987000E3C597 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A062800987000E3C597 /* Bundle+Extension.swift */; };
-		F3585A082800987000E3C597 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A062800987000E3C597 /* Bundle+Extension.swift */; };
-		F3585A092800987000E3C597 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A062800987000E3C597 /* Bundle+Extension.swift */; };
+		F3585A072800987000E3C597 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A062800987000E3C597 /* BundleExtension.swift */; };
+		F3585A082800987000E3C597 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A062800987000E3C597 /* BundleExtension.swift */; };
+		F3585A092800987000E3C597 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A062800987000E3C597 /* BundleExtension.swift */; };
 		F3585A0C2800996C00E3C597 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A0B2800996C00E3C597 /* AppConstants.swift */; };
 		F3585A0D2800996C00E3C597 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A0B2800996C00E3C597 /* AppConstants.swift */; };
 		F3585A0E2800996C00E3C597 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A0B2800996C00E3C597 /* AppConstants.swift */; };
-		F3585A142800FE5800E3C597 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A132800FE5800E3C597 /* DateFormatter+Extension.swift */; };
-		F3585A152800FE5800E3C597 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A132800FE5800E3C597 /* DateFormatter+Extension.swift */; };
-		F3585A162800FE5800E3C597 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A132800FE5800E3C597 /* DateFormatter+Extension.swift */; };
+		F3585A142800FE5800E3C597 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A132800FE5800E3C597 /* DateFormatterExtension.swift */; };
+		F3585A152800FE5800E3C597 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A132800FE5800E3C597 /* DateFormatterExtension.swift */; };
+		F3585A162800FE5800E3C597 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A132800FE5800E3C597 /* DateFormatterExtension.swift */; };
+		F3585A1C28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A1B28016F7B00E3C597 /* SplashScreenViewController.swift */; };
+		F3585A1D28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A1B28016F7B00E3C597 /* SplashScreenViewController.swift */; };
+		F3585A1E28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A1B28016F7B00E3C597 /* SplashScreenViewController.swift */; };
+		F3585A712802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A702802CA2F00E3C597 /* SquadTabBarViewController.swift */; };
+		F3585A722802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A702802CA2F00E3C597 /* SquadTabBarViewController.swift */; };
+		F3585A732802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A702802CA2F00E3C597 /* SquadTabBarViewController.swift */; };
+		F3585A752802CAC800E3C597 /* SquadNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A742802CAC800E3C597 /* SquadNavigationController.swift */; };
+		F3585A762802CAC800E3C597 /* SquadNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A742802CAC800E3C597 /* SquadNavigationController.swift */; };
+		F3585A772802CAC800E3C597 /* SquadNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A742802CAC800E3C597 /* SquadNavigationController.swift */; };
+		F3585A792802DA6300E3C597 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A782802DA6300E3C597 /* StoryboardExtension.swift */; };
+		F3585A7A2802DA6300E3C597 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A782802DA6300E3C597 /* StoryboardExtension.swift */; };
+		F3585A7B2802DA6300E3C597 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A782802DA6300E3C597 /* StoryboardExtension.swift */; };
+		F3585A7D2802DC9A00E3C597 /* Room.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A7C2802DC9A00E3C597 /* Room.storyboard */; };
+		F3585A7E2802DC9A00E3C597 /* Room.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A7C2802DC9A00E3C597 /* Room.storyboard */; };
+		F3585A7F2802DC9A00E3C597 /* Room.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A7C2802DC9A00E3C597 /* Room.storyboard */; };
+		F3585A812802DCAE00E3C597 /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A802802DCAE00E3C597 /* People.storyboard */; };
+		F3585A822802DCAE00E3C597 /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A802802DCAE00E3C597 /* People.storyboard */; };
+		F3585A832802DCAE00E3C597 /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A802802DCAE00E3C597 /* People.storyboard */; };
+		F3585A852802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */; };
+		F3585A862802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */; };
+		F3585A872802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,27 +95,12 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		F358598A28004F4700E3C597 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F358598928004F4700E3C597 /* SquadStyle.framework in Embed Frameworks */,
-				F35859B12800523800E3C597 /* SquadComponent.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		F358592B28004C7300E3C597 /* Squad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F358592E28004C7300E3C597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F358593028004C7300E3C597 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F358593228004C7300E3C597 /* RoomListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListViewController.swift; sourceTree = "<group>"; };
-		F358593528004C7300E3C597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F358593528004C7300E3C597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
 		F358593728004C7400E3C597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F358593A28004C7400E3C597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F358593C28004C7400E3C597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,7 +113,7 @@
 		F358598728004F4700E3C597 /* SquadStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SquadStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35859AF2800523800E3C597 /* SquadComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SquadComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35859D02800770800E3C597 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F35859D82800780500E3C597 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F35859D82800780500E3C597 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		F35859DA28007ACC00E3C597 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		F35859DE28007CDD00E3C597 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		F35859E3280083EF00E3C597 /* People.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = People.json; sourceTree = "<group>"; };
@@ -119,9 +123,17 @@
 		F35859F828008F0E00E3C597 /* PeopleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
 		F35859FD280090BB00E3C597 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F3585A02280092B000E3C597 /* SquadError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadError.swift; sourceTree = "<group>"; };
-		F3585A062800987000E3C597 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		F3585A062800987000E3C597 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		F3585A0B2800996C00E3C597 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
-		F3585A132800FE5800E3C597 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		F3585A132800FE5800E3C597 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
+		F3585A1B28016F7B00E3C597 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		F3585A3A2802A82600E3C597 /* libTestStyle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestStyle.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3585A702802CA2F00E3C597 /* SquadTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadTabBarViewController.swift; sourceTree = "<group>"; };
+		F3585A742802CAC800E3C597 /* SquadNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadNavigationController.swift; sourceTree = "<group>"; };
+		F3585A782802DA6300E3C597 /* StoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
+		F3585A7C2802DC9A00E3C597 /* Room.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Room.storyboard; sourceTree = "<group>"; };
+		F3585A802802DCAE00E3C597 /* People.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = People.storyboard; sourceTree = "<group>"; };
+		F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +194,6 @@
 				F35859FC280090A800E3C597 /* Manager */,
 				F35859B52800555900E3C597 /* Resources */,
 				F35859B62800556100E3C597 /* Utiles */,
-				F358593428004C7300E3C597 /* Main.storyboard */,
 				F358593928004C7400E3C597 /* LaunchScreen.storyboard */,
 				F358593C28004C7400E3C597 /* Info.plist */,
 				F35859E2280083A800E3C597 /* TestData */,
@@ -212,6 +223,7 @@
 		F358598628004F4700E3C597 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3585A3A2802A82600E3C597 /* libTestStyle.a */,
 				F35859AF2800523800E3C597 /* SquadComponent.framework */,
 				F358598728004F4700E3C597 /* SquadStyle.framework */,
 			);
@@ -222,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				F358593228004C7300E3C597 /* RoomListViewController.swift */,
+				F3585A7C2802DC9A00E3C597 /* Room.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,9 +285,11 @@
 		F35859D7280077ED00E3C597 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F35859D82800780500E3C597 /* String+Extension.swift */,
-				F3585A062800987000E3C597 /* Bundle+Extension.swift */,
-				F3585A132800FE5800E3C597 /* DateFormatter+Extension.swift */,
+				F35859D82800780500E3C597 /* StringExtension.swift */,
+				F3585A062800987000E3C597 /* BundleExtension.swift */,
+				F3585A132800FE5800E3C597 /* DateFormatterExtension.swift */,
+				F3585A782802DA6300E3C597 /* StoryboardExtension.swift */,
+				F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -291,6 +306,7 @@
 		F35859F328008E3900E3C597 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F3585A1928016F2200E3C597 /* OnBoarding */,
 				F35859F528008E5E00E3C597 /* Room */,
 				F35859F428008E5300E3C597 /* People */,
 			);
@@ -309,8 +325,8 @@
 		F35859F528008E5E00E3C597 /* Room */ = {
 			isa = PBXGroup;
 			children = (
-				F35859B4280054E500E3C597 /* ViewModel */,
 				F35859B2280054D600E3C597 /* View */,
+				F35859B4280054E500E3C597 /* ViewModel */,
 			);
 			path = Room;
 			sourceTree = "<group>";
@@ -319,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				F35859F828008F0E00E3C597 /* PeopleListViewController.swift */,
+				F3585A802802DCAE00E3C597 /* People.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -347,6 +364,41 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		F3585A1728016EE600E3C597 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F3585A1B28016F7B00E3C597 /* SplashScreenViewController.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		F3585A1828016EFD00E3C597 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F3585A702802CA2F00E3C597 /* SquadTabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F3585A1928016F2200E3C597 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				F3585A1A28016F4400E3C597 /* View */,
+				F3585A1728016EE600E3C597 /* SplashScreen */,
+				F3585A1828016EFD00E3C597 /* TabBar */,
+				F3585A742802CAC800E3C597 /* SquadNavigationController.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		F3585A1A28016F4400E3C597 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F358593428004C7300E3C597 /* Onboarding.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,7 +409,6 @@
 				F358592728004C7300E3C597 /* Sources */,
 				F358592828004C7300E3C597 /* Frameworks */,
 				F358592928004C7300E3C597 /* Resources */,
-				F358598A28004F4700E3C597 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -455,8 +506,10 @@
 				F35859CF2800770800E3C597 /* Localizable.strings in Resources */,
 				F35859E4280083EF00E3C597 /* People.json in Resources */,
 				F358593828004C7400E3C597 /* Assets.xcassets in Resources */,
+				F3585A7D2802DC9A00E3C597 /* Room.storyboard in Resources */,
+				F3585A812802DCAE00E3C597 /* People.storyboard in Resources */,
 				F35859E8280083FC00E3C597 /* Room.json in Resources */,
-				F358593628004C7300E3C597 /* Main.storyboard in Resources */,
+				F358593628004C7300E3C597 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +517,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3585A7E2802DC9A00E3C597 /* Room.storyboard in Resources */,
+				F3585A822802DCAE00E3C597 /* People.storyboard in Resources */,
 				F35859E9280083FC00E3C597 /* Room.json in Resources */,
 				F35859E5280083EF00E3C597 /* People.json in Resources */,
 			);
@@ -473,6 +528,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3585A7F2802DC9A00E3C597 /* Room.storyboard in Resources */,
+				F3585A832802DCAE00E3C597 /* People.storyboard in Resources */,
 				F35859EA280083FC00E3C597 /* Room.json in Resources */,
 				F35859E6280083EF00E3C597 /* People.json in Resources */,
 			);
@@ -485,18 +542,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35859D92800780500E3C597 /* String+Extension.swift in Sources */,
+				F3585A752802CAC800E3C597 /* SquadNavigationController.swift in Sources */,
+				F35859D92800780500E3C597 /* StringExtension.swift in Sources */,
 				F35859F928008F0E00E3C597 /* PeopleListViewController.swift in Sources */,
 				F35859FE280090BB00E3C597 /* NetworkManager.swift in Sources */,
+				F3585A792802DA6300E3C597 /* StoryboardExtension.swift in Sources */,
+				F3585A712802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */,
 				F358593328004C7300E3C597 /* RoomListViewController.swift in Sources */,
 				F35859DF28007CDD00E3C597 /* Room.swift in Sources */,
 				F358592F28004C7300E3C597 /* AppDelegate.swift in Sources */,
 				F35859EC280087CC00E3C597 /* PeopleViewModel.swift in Sources */,
-				F3585A072800987000E3C597 /* Bundle+Extension.swift in Sources */,
+				F3585A072800987000E3C597 /* BundleExtension.swift in Sources */,
+				F3585A1C28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */,
 				F358593128004C7300E3C597 /* SceneDelegate.swift in Sources */,
 				F3585A03280092B000E3C597 /* SquadError.swift in Sources */,
-				F3585A142800FE5800E3C597 /* DateFormatter+Extension.swift in Sources */,
+				F3585A142800FE5800E3C597 /* DateFormatterExtension.swift in Sources */,
 				F3585A0C2800996C00E3C597 /* AppConstants.swift in Sources */,
+				F3585A852802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */,
 				F35859DB28007ACC00E3C597 /* People.swift in Sources */,
 				F35859F0280087ED00E3C597 /* RoomViewModel.swift in Sources */,
 			);
@@ -507,15 +569,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F35859F1280087ED00E3C597 /* RoomViewModel.swift in Sources */,
-				F3585A082800987000E3C597 /* Bundle+Extension.swift in Sources */,
+				F3585A082800987000E3C597 /* BundleExtension.swift in Sources */,
+				F3585A1D28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */,
 				F35859FA28008F0E00E3C597 /* PeopleListViewController.swift in Sources */,
+				F3585A862802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */,
 				F35859DC28007ACC00E3C597 /* People.swift in Sources */,
 				F3585A04280092B000E3C597 /* SquadError.swift in Sources */,
 				F35859FF280090BB00E3C597 /* NetworkManager.swift in Sources */,
 				F35859ED280087CC00E3C597 /* PeopleViewModel.swift in Sources */,
 				F358594628004C7400E3C597 /* SquadTests.swift in Sources */,
 				F35859E028007CDD00E3C597 /* Room.swift in Sources */,
-				F3585A152800FE5800E3C597 /* DateFormatter+Extension.swift in Sources */,
+				F3585A152800FE5800E3C597 /* DateFormatterExtension.swift in Sources */,
+				F3585A722802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */,
+				F3585A762802CAC800E3C597 /* SquadNavigationController.swift in Sources */,
+				F3585A7A2802DA6300E3C597 /* StoryboardExtension.swift in Sources */,
 				F3585A0D2800996C00E3C597 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,15 +592,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F35859F2280087ED00E3C597 /* RoomViewModel.swift in Sources */,
-				F3585A092800987000E3C597 /* Bundle+Extension.swift in Sources */,
+				F3585A092800987000E3C597 /* BundleExtension.swift in Sources */,
+				F3585A1E28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */,
 				F35859FB28008F0E00E3C597 /* PeopleListViewController.swift in Sources */,
+				F3585A872802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */,
 				F35859DD28007ACC00E3C597 /* People.swift in Sources */,
 				F3585A05280092B000E3C597 /* SquadError.swift in Sources */,
 				F3585A00280090BB00E3C597 /* NetworkManager.swift in Sources */,
 				F35859EE280087CC00E3C597 /* PeopleViewModel.swift in Sources */,
 				F358595128004C7400E3C597 /* SquadUITests.swift in Sources */,
 				F35859E128007CDD00E3C597 /* Room.swift in Sources */,
-				F3585A162800FE5800E3C597 /* DateFormatter+Extension.swift in Sources */,
+				F3585A162800FE5800E3C597 /* DateFormatterExtension.swift in Sources */,
+				F3585A732802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */,
+				F3585A772802CAC800E3C597 /* SquadNavigationController.swift in Sources */,
+				F3585A7B2802DA6300E3C597 /* StoryboardExtension.swift in Sources */,
 				F3585A0E2800996C00E3C597 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,12 +626,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F358593428004C7300E3C597 /* Main.storyboard */ = {
+		F358593428004C7300E3C597 /* Onboarding.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F358593528004C7300E3C597 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Onboarding.storyboard;
 			sourceTree = "<group>";
 		};
 		F358593928004C7400E3C597 /* LaunchScreen.storyboard */ = {

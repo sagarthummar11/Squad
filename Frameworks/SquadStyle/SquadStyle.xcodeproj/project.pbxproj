@@ -10,7 +10,10 @@
 		F358597228004DE100E3C597 /* SquadStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F358596828004DE100E3C597 /* SquadStyle.framework */; };
 		F358597728004DE100E3C597 /* SquadStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358597628004DE100E3C597 /* SquadStyleTests.swift */; };
 		F358597928004DE100E3C597 /* SquadStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = F358596B28004DE100E3C597 /* SquadStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F358598528004F1B00E3C597 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358598428004F1B00E3C597 /* Color.swift */; };
+		F3585A622802B4A400E3C597 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358598428004F1B00E3C597 /* Color.swift */; };
+		F3585A642802B99900E3C597 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3585A632802B99900E3C597 /* Color.xcassets */; };
+		F3585A652802B99900E3C597 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3585A632802B99900E3C597 /* Color.xcassets */; };
+		F3585A662802B9CB00E3C597 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358598428004F1B00E3C597 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,7 @@
 		F358597628004DE100E3C597 /* SquadStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadStyleTests.swift; sourceTree = "<group>"; };
 		F358597828004DE100E3C597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F358598428004F1B00E3C597 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F3585A632802B99900E3C597 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 				F358596A28004DE100E3C597 /* SquadStyle */,
 				F358597528004DE100E3C597 /* SquadStyleTests */,
 				F358596928004DE100E3C597 /* Products */,
+				F3585A5C2802B40B00E3C597 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				F358596B28004DE100E3C597 /* SquadStyle.h */,
-				F358598428004F1B00E3C597 /* Color.swift */,
+				F3585A232801797000E3C597 /* Shared */,
 				F358596C28004DE100E3C597 /* Info.plist */,
 			);
 			path = SquadStyle;
@@ -87,6 +92,22 @@
 				F358597828004DE100E3C597 /* Info.plist */,
 			);
 			path = SquadStyleTests;
+			sourceTree = "<group>";
+		};
+		F3585A232801797000E3C597 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F358598428004F1B00E3C597 /* Color.swift */,
+				F3585A632802B99900E3C597 /* Color.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F3585A5C2802B40B00E3C597 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3585A642802B99900E3C597 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3585A652802B99900E3C597 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F358598528004F1B00E3C597 /* Color.swift in Sources */,
+				F3585A622802B4A400E3C597 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F358597728004DE100E3C597 /* SquadStyleTests.swift in Sources */,
+				F3585A662802B9CB00E3C597 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -331,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
