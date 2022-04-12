@@ -18,108 +18,44 @@
 		F35859CF2800770800E3C597 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F35859D12800770800E3C597 /* Localizable.strings */; };
 		F35859D92800780500E3C597 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859D82800780500E3C597 /* StringExtension.swift */; };
 		F35859DB28007ACC00E3C597 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859DA28007ACC00E3C597 /* People.swift */; };
-		F35859DC28007ACC00E3C597 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859DA28007ACC00E3C597 /* People.swift */; };
-		F35859DD28007ACC00E3C597 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859DA28007ACC00E3C597 /* People.swift */; };
 		F35859DF28007CDD00E3C597 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859DE28007CDD00E3C597 /* Room.swift */; };
-		F35859E028007CDD00E3C597 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859DE28007CDD00E3C597 /* Room.swift */; };
-		F35859E128007CDD00E3C597 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859DE28007CDD00E3C597 /* Room.swift */; };
 		F35859E4280083EF00E3C597 /* People.json in Resources */ = {isa = PBXBuildFile; fileRef = F35859E3280083EF00E3C597 /* People.json */; };
-		F35859E5280083EF00E3C597 /* People.json in Resources */ = {isa = PBXBuildFile; fileRef = F35859E3280083EF00E3C597 /* People.json */; };
-		F35859E6280083EF00E3C597 /* People.json in Resources */ = {isa = PBXBuildFile; fileRef = F35859E3280083EF00E3C597 /* People.json */; };
 		F35859E8280083FC00E3C597 /* Room.json in Resources */ = {isa = PBXBuildFile; fileRef = F35859E7280083FC00E3C597 /* Room.json */; };
-		F35859E9280083FC00E3C597 /* Room.json in Resources */ = {isa = PBXBuildFile; fileRef = F35859E7280083FC00E3C597 /* Room.json */; };
-		F35859EA280083FC00E3C597 /* Room.json in Resources */ = {isa = PBXBuildFile; fileRef = F35859E7280083FC00E3C597 /* Room.json */; };
 		F35859EC280087CC00E3C597 /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859EB280087CC00E3C597 /* PeopleListViewModel.swift */; };
-		F35859ED280087CC00E3C597 /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859EB280087CC00E3C597 /* PeopleListViewModel.swift */; };
-		F35859EE280087CC00E3C597 /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859EB280087CC00E3C597 /* PeopleListViewModel.swift */; };
 		F35859F0280087ED00E3C597 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859EF280087ED00E3C597 /* RoomViewModel.swift */; };
-		F35859F1280087ED00E3C597 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859EF280087ED00E3C597 /* RoomViewModel.swift */; };
-		F35859F2280087ED00E3C597 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859EF280087ED00E3C597 /* RoomViewModel.swift */; };
 		F35859F928008F0E00E3C597 /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859F828008F0E00E3C597 /* PeopleListViewController.swift */; };
-		F35859FA28008F0E00E3C597 /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859F828008F0E00E3C597 /* PeopleListViewController.swift */; };
-		F35859FB28008F0E00E3C597 /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859F828008F0E00E3C597 /* PeopleListViewController.swift */; };
 		F35859FE280090BB00E3C597 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859FD280090BB00E3C597 /* NetworkManager.swift */; };
-		F35859FF280090BB00E3C597 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859FD280090BB00E3C597 /* NetworkManager.swift */; };
-		F3585A00280090BB00E3C597 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859FD280090BB00E3C597 /* NetworkManager.swift */; };
 		F3585A03280092B000E3C597 /* SquadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A02280092B000E3C597 /* SquadError.swift */; };
-		F3585A04280092B000E3C597 /* SquadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A02280092B000E3C597 /* SquadError.swift */; };
-		F3585A05280092B000E3C597 /* SquadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A02280092B000E3C597 /* SquadError.swift */; };
 		F3585A072800987000E3C597 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A062800987000E3C597 /* BundleExtension.swift */; };
-		F3585A082800987000E3C597 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A062800987000E3C597 /* BundleExtension.swift */; };
-		F3585A092800987000E3C597 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A062800987000E3C597 /* BundleExtension.swift */; };
 		F3585A0C2800996C00E3C597 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A0B2800996C00E3C597 /* AppConstants.swift */; };
-		F3585A0D2800996C00E3C597 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A0B2800996C00E3C597 /* AppConstants.swift */; };
-		F3585A0E2800996C00E3C597 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A0B2800996C00E3C597 /* AppConstants.swift */; };
 		F3585A142800FE5800E3C597 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A132800FE5800E3C597 /* DateFormatterExtension.swift */; };
-		F3585A152800FE5800E3C597 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A132800FE5800E3C597 /* DateFormatterExtension.swift */; };
-		F3585A162800FE5800E3C597 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A132800FE5800E3C597 /* DateFormatterExtension.swift */; };
 		F3585A1C28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A1B28016F7B00E3C597 /* SplashScreenViewController.swift */; };
-		F3585A1D28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A1B28016F7B00E3C597 /* SplashScreenViewController.swift */; };
-		F3585A1E28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A1B28016F7B00E3C597 /* SplashScreenViewController.swift */; };
 		F3585A712802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A702802CA2F00E3C597 /* SquadTabBarViewController.swift */; };
 		F3585A722802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A702802CA2F00E3C597 /* SquadTabBarViewController.swift */; };
 		F3585A732802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A702802CA2F00E3C597 /* SquadTabBarViewController.swift */; };
 		F3585A752802CAC800E3C597 /* SquadNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A742802CAC800E3C597 /* SquadNavigationController.swift */; };
-		F3585A762802CAC800E3C597 /* SquadNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A742802CAC800E3C597 /* SquadNavigationController.swift */; };
-		F3585A772802CAC800E3C597 /* SquadNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A742802CAC800E3C597 /* SquadNavigationController.swift */; };
 		F3585A792802DA6300E3C597 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A782802DA6300E3C597 /* StoryboardExtension.swift */; };
-		F3585A7A2802DA6300E3C597 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A782802DA6300E3C597 /* StoryboardExtension.swift */; };
-		F3585A7B2802DA6300E3C597 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A782802DA6300E3C597 /* StoryboardExtension.swift */; };
 		F3585A7D2802DC9A00E3C597 /* Room.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A7C2802DC9A00E3C597 /* Room.storyboard */; };
-		F3585A7E2802DC9A00E3C597 /* Room.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A7C2802DC9A00E3C597 /* Room.storyboard */; };
-		F3585A7F2802DC9A00E3C597 /* Room.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A7C2802DC9A00E3C597 /* Room.storyboard */; };
 		F3585A812802DCAE00E3C597 /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A802802DCAE00E3C597 /* People.storyboard */; };
-		F3585A822802DCAE00E3C597 /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A802802DCAE00E3C597 /* People.storyboard */; };
-		F3585A832802DCAE00E3C597 /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A802802DCAE00E3C597 /* People.storyboard */; };
 		F3585A852802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */; };
-		F3585A862802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */; };
-		F3585A872802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */; };
-		F3585A8B28030A8900E3C597 /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358593228004C7300E3C597 /* RoomListViewController.swift */; };
-		F3585A8C28030A8900E3C597 /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358593228004C7300E3C597 /* RoomListViewController.swift */; };
 		F3585A8E280324C000E3C597 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A8D280324BF00E3C597 /* Box.swift */; };
-		F3585A8F280324C000E3C597 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A8D280324BF00E3C597 /* Box.swift */; };
-		F3585A90280324C000E3C597 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A8D280324BF00E3C597 /* Box.swift */; };
 		F3585A9228032BF800E3C597 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A9128032BF800E3C597 /* PeopleTableViewCell.swift */; };
-		F3585A9328032BF800E3C597 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A9128032BF800E3C597 /* PeopleTableViewCell.swift */; };
-		F3585A9428032BF800E3C597 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A9128032BF800E3C597 /* PeopleTableViewCell.swift */; };
 		F3585A962803300D00E3C597 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A952803300D00E3C597 /* UITableViewExtension.swift */; };
-		F3585A972803300D00E3C597 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A952803300D00E3C597 /* UITableViewExtension.swift */; };
-		F3585A982803300D00E3C597 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A952803300D00E3C597 /* UITableViewExtension.swift */; };
 		F385D47828044C4F009E3698 /* RoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D47728044C4F009E3698 /* RoomCollectionViewCell.swift */; };
-		F385D47928044C51009E3698 /* RoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D47728044C4F009E3698 /* RoomCollectionViewCell.swift */; };
-		F385D47A28044C51009E3698 /* RoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D47728044C4F009E3698 /* RoomCollectionViewCell.swift */; };
 		F385D47D280479D2009E3698 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D47C280479D2009E3698 /* UIViewExtension.swift */; };
 		F385D48728049CA0009E3698 /* PeopleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D48628049CA0009E3698 /* PeopleDetailViewController.swift */; };
-		F385D48828049CA0009E3698 /* PeopleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D48628049CA0009E3698 /* PeopleDetailViewController.swift */; };
-		F385D48928049CA0009E3698 /* PeopleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D48628049CA0009E3698 /* PeopleDetailViewController.swift */; };
 		F385D48F2804A014009E3698 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D48E2804A014009E3698 /* PeopleViewModel.swift */; };
-		F385D4902804A014009E3698 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D48E2804A014009E3698 /* PeopleViewModel.swift */; };
-		F385D4912804A014009E3698 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D48E2804A014009E3698 /* PeopleViewModel.swift */; };
 		F385D4942804B6BD009E3698 /* MainAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D4932804B6BD009E3698 /* MainAppCoordinator.swift */; };
-		F385D4952804B6BD009E3698 /* MainAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D4932804B6BD009E3698 /* MainAppCoordinator.swift */; };
-		F385D4962804B6BD009E3698 /* MainAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D4932804B6BD009E3698 /* MainAppCoordinator.swift */; };
 		F3B8049C2803431600BAC810 /* SquadStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F358598728004F4700E3C597 /* SquadStyle.framework */; };
 		F3B8049D2803431600BAC810 /* SquadStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F358598728004F4700E3C597 /* SquadStyle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F3B96C56280344AA00BFEA22 /* SquadComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; };
 		F3B96C57280344AA00BFEA22 /* SquadComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F3D25F2528035B5700C13FCF /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D25F2428035B5700C13FCF /* UICollectionViewExtension.swift */; };
-		F3D25F2628035B5700C13FCF /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D25F2428035B5700C13FCF /* UICollectionViewExtension.swift */; };
-		F3D25F2728035B5700C13FCF /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D25F2428035B5700C13FCF /* UICollectionViewExtension.swift */; };
 		F3ED55612804DC2A00721649 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55602804DC2A00721649 /* UIApplicationExtension.swift */; };
-		F3ED55622804DC2A00721649 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55602804DC2A00721649 /* UIApplicationExtension.swift */; };
-		F3ED55632804DC2A00721649 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55602804DC2A00721649 /* UIApplicationExtension.swift */; };
 		F3ED55652804DC4500721649 /* Launcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55642804DC4500721649 /* Launcher.swift */; };
-		F3ED55662804DC4500721649 /* Launcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55642804DC4500721649 /* Launcher.swift */; };
-		F3ED55672804DC4500721649 /* Launcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55642804DC4500721649 /* Launcher.swift */; };
 		F3ED55692804DC9A00721649 /* SquadRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55682804DC9A00721649 /* SquadRouter.swift */; };
-		F3ED556A2804DC9A00721649 /* SquadRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55682804DC9A00721649 /* SquadRouter.swift */; };
-		F3ED556B2804DC9A00721649 /* SquadRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55682804DC9A00721649 /* SquadRouter.swift */; };
 		F3ED5576280546B600721649 /* SquadBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED5575280546B600721649 /* SquadBaseViewController.swift */; };
-		F3ED5577280546B600721649 /* SquadBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED5575280546B600721649 /* SquadBaseViewController.swift */; };
-		F3ED5578280546B600721649 /* SquadBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED5575280546B600721649 /* SquadBaseViewController.swift */; };
 		F3ED557E28055EE400721649 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED557D28055EE400721649 /* Debouncer.swift */; };
-		F3ED557F28055EE400721649 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED557D28055EE400721649 /* Debouncer.swift */; };
-		F3ED558028055EE400721649 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED557D28055EE400721649 /* Debouncer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -653,10 +589,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3585A7E2802DC9A00E3C597 /* Room.storyboard in Resources */,
-				F3585A822802DCAE00E3C597 /* People.storyboard in Resources */,
-				F35859E9280083FC00E3C597 /* Room.json in Resources */,
-				F35859E5280083EF00E3C597 /* People.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,10 +596,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3585A7F2802DC9A00E3C597 /* Room.storyboard in Resources */,
-				F3585A832802DCAE00E3C597 /* People.storyboard in Resources */,
-				F35859EA280083FC00E3C597 /* Room.json in Resources */,
-				F35859E6280083EF00E3C597 /* People.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,36 +646,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35859F1280087ED00E3C597 /* RoomViewModel.swift in Sources */,
-				F3ED55662804DC4500721649 /* Launcher.swift in Sources */,
-				F3ED5577280546B600721649 /* SquadBaseViewController.swift in Sources */,
-				F385D4902804A014009E3698 /* PeopleViewModel.swift in Sources */,
-				F385D47928044C51009E3698 /* RoomCollectionViewCell.swift in Sources */,
-				F3585A082800987000E3C597 /* BundleExtension.swift in Sources */,
-				F385D48828049CA0009E3698 /* PeopleDetailViewController.swift in Sources */,
-				F3585A1D28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */,
-				F35859FA28008F0E00E3C597 /* PeopleListViewController.swift in Sources */,
-				F3585A862802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */,
-				F35859DC28007ACC00E3C597 /* People.swift in Sources */,
-				F3585A04280092B000E3C597 /* SquadError.swift in Sources */,
-				F385D4952804B6BD009E3698 /* MainAppCoordinator.swift in Sources */,
-				F3585A9328032BF800E3C597 /* PeopleTableViewCell.swift in Sources */,
-				F35859FF280090BB00E3C597 /* NetworkManager.swift in Sources */,
-				F35859ED280087CC00E3C597 /* PeopleListViewModel.swift in Sources */,
-				F3585A8F280324C000E3C597 /* Box.swift in Sources */,
-				F3585A972803300D00E3C597 /* UITableViewExtension.swift in Sources */,
 				F358594628004C7400E3C597 /* SquadTests.swift in Sources */,
-				F35859E028007CDD00E3C597 /* Room.swift in Sources */,
-				F3585A152800FE5800E3C597 /* DateFormatterExtension.swift in Sources */,
 				F3585A722802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */,
-				F3D25F2628035B5700C13FCF /* UICollectionViewExtension.swift in Sources */,
-				F3ED557F28055EE400721649 /* Debouncer.swift in Sources */,
-				F3585A8B28030A8900E3C597 /* RoomListViewController.swift in Sources */,
-				F3ED556A2804DC9A00721649 /* SquadRouter.swift in Sources */,
-				F3ED55622804DC2A00721649 /* UIApplicationExtension.swift in Sources */,
-				F3585A762802CAC800E3C597 /* SquadNavigationController.swift in Sources */,
-				F3585A7A2802DA6300E3C597 /* StoryboardExtension.swift in Sources */,
-				F3585A0D2800996C00E3C597 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,36 +655,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35859F2280087ED00E3C597 /* RoomViewModel.swift in Sources */,
-				F3ED55672804DC4500721649 /* Launcher.swift in Sources */,
-				F3ED5578280546B600721649 /* SquadBaseViewController.swift in Sources */,
-				F385D4912804A014009E3698 /* PeopleViewModel.swift in Sources */,
-				F385D47A28044C51009E3698 /* RoomCollectionViewCell.swift in Sources */,
-				F3585A092800987000E3C597 /* BundleExtension.swift in Sources */,
-				F385D48928049CA0009E3698 /* PeopleDetailViewController.swift in Sources */,
-				F3585A1E28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */,
-				F35859FB28008F0E00E3C597 /* PeopleListViewController.swift in Sources */,
-				F3585A872802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */,
-				F35859DD28007ACC00E3C597 /* People.swift in Sources */,
-				F3585A05280092B000E3C597 /* SquadError.swift in Sources */,
-				F385D4962804B6BD009E3698 /* MainAppCoordinator.swift in Sources */,
-				F3585A9428032BF800E3C597 /* PeopleTableViewCell.swift in Sources */,
-				F3585A00280090BB00E3C597 /* NetworkManager.swift in Sources */,
-				F35859EE280087CC00E3C597 /* PeopleListViewModel.swift in Sources */,
-				F3585A90280324C000E3C597 /* Box.swift in Sources */,
-				F3585A982803300D00E3C597 /* UITableViewExtension.swift in Sources */,
 				F358595128004C7400E3C597 /* SquadUITests.swift in Sources */,
-				F35859E128007CDD00E3C597 /* Room.swift in Sources */,
-				F3585A162800FE5800E3C597 /* DateFormatterExtension.swift in Sources */,
 				F3585A732802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */,
-				F3D25F2728035B5700C13FCF /* UICollectionViewExtension.swift in Sources */,
-				F3ED558028055EE400721649 /* Debouncer.swift in Sources */,
-				F3585A8C28030A8900E3C597 /* RoomListViewController.swift in Sources */,
-				F3ED556B2804DC9A00721649 /* SquadRouter.swift in Sources */,
-				F3ED55632804DC2A00721649 /* UIApplicationExtension.swift in Sources */,
-				F3585A772802CAC800E3C597 /* SquadNavigationController.swift in Sources */,
-				F3585A7B2802DA6300E3C597 /* StoryboardExtension.swift in Sources */,
-				F3585A0E2800996C00E3C597 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

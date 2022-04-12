@@ -11,12 +11,9 @@
 		F35859A42800521400E3C597 /* SquadComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859A32800521400E3C597 /* SquadComponentTests.swift */; };
 		F35859A62800521400E3C597 /* SquadComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = F35859982800521400E3C597 /* SquadComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3585A6E2802BDD300E3C597 /* SquadComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A6D2802BDD300E3C597 /* SquadComponents.swift */; };
-		F3585A6F2802BDD300E3C597 /* SquadComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A6D2802BDD300E3C597 /* SquadComponents.swift */; };
 		F3653F99280400380047B322 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F3653F98280400380047B322 /* Kingfisher */; };
 		F385D48028048187009E3698 /* SquadLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D47F28048187009E3698 /* SquadLabel.swift */; };
-		F385D48128048187009E3698 /* SquadLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D47F28048187009E3698 /* SquadLabel.swift */; };
 		F385D48428049A75009E3698 /* SquadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D48328049A75009E3698 /* SquadImageView.swift */; };
-		F385D48528049A75009E3698 /* SquadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D48328049A75009E3698 /* SquadImageView.swift */; };
 		F3ED557A280548A800721649 /* SquadStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ED5579280548A800721649 /* SquadStyle.framework */; };
 		F3ED557B280548A800721649 /* SquadStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3ED5579280548A800721649 /* SquadStyle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -287,10 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F385D48128048187009E3698 /* SquadLabel.swift in Sources */,
-				F3585A6F2802BDD300E3C597 /* SquadComponents.swift in Sources */,
 				F35859A42800521400E3C597 /* SquadComponentTests.swift in Sources */,
-				F385D48528049A75009E3698 /* SquadImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

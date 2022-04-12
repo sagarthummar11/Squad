@@ -12,10 +12,7 @@
 		F358597928004DE100E3C597 /* SquadStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = F358596B28004DE100E3C597 /* SquadStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3585A622802B4A400E3C597 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358598428004F1B00E3C597 /* Color.swift */; };
 		F3585A642802B99900E3C597 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3585A632802B99900E3C597 /* Color.xcassets */; };
-		F3585A652802B99900E3C597 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3585A632802B99900E3C597 /* Color.xcassets */; };
-		F3585A662802B9CB00E3C597 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358598428004F1B00E3C597 /* Color.swift */; };
 		F3585A892802FDE400E3C597 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A882802FDE400E3C597 /* Fonts.swift */; };
-		F3585A8A2802FDE400E3C597 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A882802FDE400E3C597 /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,7 +211,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3585A652802B99900E3C597 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,8 +231,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F358597728004DE100E3C597 /* SquadStyleTests.swift in Sources */,
-				F3585A8A2802FDE400E3C597 /* Fonts.swift in Sources */,
-				F3585A662802B9CB00E3C597 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
