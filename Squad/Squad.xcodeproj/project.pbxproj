@@ -31,8 +31,6 @@
 		F3585A142800FE5800E3C597 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A132800FE5800E3C597 /* DateFormatterExtension.swift */; };
 		F3585A1C28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A1B28016F7B00E3C597 /* SplashScreenViewController.swift */; };
 		F3585A712802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A702802CA2F00E3C597 /* SquadTabBarViewController.swift */; };
-		F3585A722802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A702802CA2F00E3C597 /* SquadTabBarViewController.swift */; };
-		F3585A732802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A702802CA2F00E3C597 /* SquadTabBarViewController.swift */; };
 		F3585A752802CAC800E3C597 /* SquadNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A742802CAC800E3C597 /* SquadNavigationController.swift */; };
 		F3585A792802DA6300E3C597 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A782802DA6300E3C597 /* StoryboardExtension.swift */; };
 		F3585A7D2802DC9A00E3C597 /* Room.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A7C2802DC9A00E3C597 /* Room.storyboard */; };
@@ -47,9 +45,9 @@
 		F385D48F2804A014009E3698 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D48E2804A014009E3698 /* PeopleViewModel.swift */; };
 		F385D4942804B6BD009E3698 /* MainAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D4932804B6BD009E3698 /* MainAppCoordinator.swift */; };
 		F3B8049C2803431600BAC810 /* SquadStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F358598728004F4700E3C597 /* SquadStyle.framework */; };
-		F3B8049D2803431600BAC810 /* SquadStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F358598728004F4700E3C597 /* SquadStyle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3B8049D2803431600BAC810 /* SquadStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F358598728004F4700E3C597 /* SquadStyle.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F3B96C56280344AA00BFEA22 /* SquadComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; };
-		F3B96C57280344AA00BFEA22 /* SquadComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3B96C57280344AA00BFEA22 /* SquadComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F3D25F2528035B5700C13FCF /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D25F2428035B5700C13FCF /* UICollectionViewExtension.swift */; };
 		F3ED55612804DC2A00721649 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55602804DC2A00721649 /* UIApplicationExtension.swift */; };
 		F3ED55652804DC4500721649 /* Launcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55642804DC4500721649 /* Launcher.swift */; };
@@ -647,7 +645,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F358594628004C7400E3C597 /* SquadTests.swift in Sources */,
-				F3585A722802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,7 +653,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F358595128004C7400E3C597 /* SquadUITests.swift in Sources */,
-				F3585A732802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -834,13 +830,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vm.Squad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -859,13 +856,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vm.Squad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
