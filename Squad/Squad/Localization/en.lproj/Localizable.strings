@@ -26,3 +26,9 @@
 
 /* Room List Screen */
 "room.List.navigation.title" = "Rooms";
+
+/* Rool List Cell*/
+"room.list.cell.roomLabel.title" = "Room";
+"room.list.cell.available.title" = "Available";
+"room.list.cell.occupied.title" = "Occupied";
+"room.list.cell.maxOccupancy.title" = "Max Occupancy";

@@ -7,6 +7,7 @@
 
 import UIKit
 import SquadComponent
+import SquadStyle
 
 class RoomCollectionViewCell: UICollectionViewCell {
     
@@ -16,11 +17,18 @@ class RoomCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var availabilityStatusLabel: UILabel!
     @IBOutlet weak var maxOccupancyLabel: UILabel!
     
+    var room: Room?
+    
     //MARK:- Configuration Methods -
     
-    func configureView() {
+    func configure(_ room: Room) {
         containerView.cornerRadius(15)
-        containerView.drawBorder(borderWidth: 5, color: .orange)
-        titleLabel.configureView()
+        containerView.drawBorder(borderWidth: 1, color: SquadColor.gainsboro.color)
+        
+        titleLabel.text = "room.list.cell.roomLabel.title".localized
+        numberLabel.text = room.id
+        availabilityStatusLabel.text = room.roomAvailability
+        availabilityStatusLabel.textColor = room.availabilityColor
+        maxOccupancyLabel.text = room.displayMaxOccupancy
     }
 }

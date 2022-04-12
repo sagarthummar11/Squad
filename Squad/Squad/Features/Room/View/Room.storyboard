@@ -35,32 +35,32 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Csh-1U-8Og">
-                                                    <rect key="frame" x="12" y="12" width="255" height="246"/>
+                                                    <rect key="frame" x="4" y="4" width="271" height="262"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QYN-77-6oT">
-                                                            <rect key="frame" x="66" y="67" width="123" height="112"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QYN-77-6oT">
+                                                            <rect key="frame" x="87" y="77.5" width="97.5" height="107.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdO-Hg-IsA" customClass="SquadLabel" customModule="SquadComponent">
-                                                                    <rect key="frame" x="39.5" y="0.0" width="44.5" height="20.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdO-Hg-IsA" customClass="SquadLabel" customModule="SquadComponent">
+                                                                    <rect key="frame" x="26.5" y="0.0" width="44.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsX-yW-TtF">
-                                                                    <rect key="frame" x="58" y="30.5" width="7.5" height="20.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsX-yW-TtF">
+                                                                    <rect key="frame" x="45" y="30.5" width="7.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2F-rj-HQw">
-                                                                    <rect key="frame" x="28" y="61" width="67.5" height="20.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2F-rj-HQw">
+                                                                    <rect key="frame" x="15" y="61" width="67.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Occupancy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBg-Ls-8Cr">
-                                                                    <rect key="frame" x="0.0" y="91.5" width="123" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Occupancy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBg-Ls-8Cr">
+                                                                    <rect key="frame" x="0.0" y="91.5" width="97.5" height="16"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -70,15 +70,15 @@
                                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                     <constraints>
                                                         <constraint firstItem="QYN-77-6oT" firstAttribute="centerY" secondItem="Csh-1U-8Og" secondAttribute="centerY" id="Fxb-B3-vda"/>
-                                                        <constraint firstItem="QYN-77-6oT" firstAttribute="centerX" secondItem="Csh-1U-8Og" secondAttribute="centerX" id="p8O-lA-od8"/>
+                                                        <constraint firstItem="QYN-77-6oT" firstAttribute="centerX" secondItem="Csh-1U-8Og" secondAttribute="centerX" id="get-FT-k5L"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="Csh-1U-8Og" secondAttribute="bottom" constant="12" id="4uE-2n-wMP"/>
-                                                <constraint firstItem="Csh-1U-8Og" firstAttribute="top" secondItem="pSm-Qd-iFB" secondAttribute="top" constant="12" id="CCI-MR-n4o"/>
-                                                <constraint firstItem="Csh-1U-8Og" firstAttribute="leading" secondItem="pSm-Qd-iFB" secondAttribute="leading" constant="12" id="JZz-Kz-03J"/>
-                                                <constraint firstAttribute="trailing" secondItem="Csh-1U-8Og" secondAttribute="trailing" priority="15" constant="12" id="PKW-ud-B1C"/>
+                                                <constraint firstAttribute="bottom" secondItem="Csh-1U-8Og" secondAttribute="bottom" constant="4" id="4uE-2n-wMP"/>
+                                                <constraint firstItem="Csh-1U-8Og" firstAttribute="top" secondItem="pSm-Qd-iFB" secondAttribute="top" constant="4" id="CCI-MR-n4o"/>
+                                                <constraint firstItem="Csh-1U-8Og" firstAttribute="leading" secondItem="pSm-Qd-iFB" secondAttribute="leading" constant="4" id="JZz-Kz-03J"/>
+                                                <constraint firstAttribute="trailing" secondItem="Csh-1U-8Og" secondAttribute="trailing" priority="15" constant="4" id="PKW-ud-B1C"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="279" height="270"/>

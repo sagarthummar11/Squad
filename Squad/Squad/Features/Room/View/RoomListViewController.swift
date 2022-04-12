@@ -83,7 +83,8 @@ extension RoomListViewController: UICollectionViewDataSource, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let roomCell: RoomCollectionViewCell = roomListCollectionView.dequeue(cellForItemAt: indexPath)
-        roomCell.configureView()
+        let room = viewModel.fetchRoom(indexPath)
+        roomCell.configure(room)
         return roomCell
     }
 }
@@ -98,6 +99,6 @@ extension RoomListViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        UIEdgeInsets(top: 12, left: 10, bottom: 10, right: 10)
     }
 }

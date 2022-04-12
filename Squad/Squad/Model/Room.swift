@@ -14,7 +14,18 @@ struct Room: Identifiable, Codable {
     var maxOccupancy: Int
     var isOccupied: Bool
     var createdAt: Date
-//    var color = SquadColor.randomColor
+    
+    var roomAvailability: String {
+        isOccupied ? "room.list.cell.occupied.title".localized : "room.list.cell.available.title".localized
+    }
+    
+    var availabilityColor: UIColor {
+        isOccupied ? SquadColor.appTheme.color : SquadColor.myrtleGreen.color
+    }
+    
+    var displayMaxOccupancy: String {
+        "room.list.cell.maxOccupancy.title".localized + ": \n\(maxOccupancy)"
+    }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
