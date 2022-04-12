@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PeopleListViewController: UIViewController {
+class PeopleListViewController: SquadBaseViewController {
 
     //MARK:- Properties -
     @IBOutlet weak var peopleTableView: UITableView! {
@@ -20,7 +20,9 @@ class PeopleListViewController: UIViewController {
     var viewModel: PeopleListViewModel!
     
     fileprivate let peopleTabItem = {
-        UITabBarItem(title: "People", image: nil, selectedImage: nil)
+        UITabBarItem(title: "tab.people.title".localized,
+                     image: AppImage.peopleList.image,
+                     selectedImage: AppImage.peopleListSelected.image)
     }()
     
     //MARK:- View Controller Life Cycle Methods -
@@ -30,6 +32,13 @@ class PeopleListViewController: UIViewController {
         
         configureView()
         bindViewModel()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    
+        //Configure Navigation Bar
+        title = "profile.list.navigation.title".localized
     }
 
     //MARK: - View Configuration Methods -
@@ -78,6 +87,11 @@ extension PeopleListViewController: UITableViewDataSource, UITableViewDelegate {
         let people = viewModel.fetchPeople(indexPath)
         peopleTableViewCell.configure(people: people)
         return peopleTableViewCell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let tableCell = cell as? PeopleTableViewCell else { return }
+        tableCell.cancelDownload()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

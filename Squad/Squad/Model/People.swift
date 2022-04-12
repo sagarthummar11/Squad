@@ -8,6 +8,7 @@
 import Foundation
 
 struct People: Identifiable, Codable {
+    
     let id: String
     let firstName: String
     let lastName: String
@@ -19,6 +20,22 @@ struct People: Identifiable, Codable {
     
     var name: String {
         return "\(firstName) \(lastName)"
+    }
+    
+    var imageURL: URL? {
+        return URL(string: avatar ?? "")
+    }
+     
+    var displayEmail: String {
+        "profile.details.email.title".localized + ": " + (email ?? "-")
+    }
+     
+    var displayJobTitle: String {
+        "profile.details.jobTitle.title".localized + ": " + (jobtitle ?? "-")
+    }
+     
+    var displayFavouriteColor: String {
+        "profile.details.favouriteColor.title".localized + ": " + (favouriteColor ?? "")
     }
     
     init(from decoder: Decoder) throws {

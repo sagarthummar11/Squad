@@ -7,6 +7,7 @@
 
 import UIKit
 import SquadComponent
+import SquadStyle
 
 class PeopleTableViewCell: UITableViewCell {
 
@@ -14,6 +15,7 @@ class PeopleTableViewCell: UITableViewCell {
     @IBOutlet weak var profileImageView: SquadImageView! {
         didSet {
             profileImageView.cornerRadius(profileImageView.bounds.height/2)
+            profileImageView.drawBorder(borderWidth: 1.5, color: SquadColor.gainsboro.color)
         }
     }
     
@@ -29,5 +31,10 @@ class PeopleTableViewCell: UITableViewCell {
         
         //Assign A Value
         nameLabel.text = people.name
+        profileImageView.imgage(people.imageURL, placeholder: AppImage.placeholder.image)
+    }
+    
+    func cancelDownload() {
+        profileImageView.cancel()
     }
 }

@@ -9,7 +9,7 @@ import UIKit
 import SquadStyle
 import SquadComponent
 
-class RoomListViewController: UIViewController {
+class RoomListViewController: SquadBaseViewController {
 
     //MARK:- Properties -
     @IBOutlet weak var roomListCollectionView: UICollectionView! {
@@ -22,7 +22,9 @@ class RoomListViewController: UIViewController {
     var viewModel: RoomViewModel!
     
     fileprivate let roomTabItem = {
-        UITabBarItem(title: "Room", image: nil, selectedImage: nil)
+        UITabBarItem(title: "tab.rooms.title".localized,
+                     image: AppImage.roomList.image,
+                     selectedImage: AppImage.roomListSelected.image)
     }()
     
     //MARK:- View Controller Life Cycle Methods -
@@ -32,6 +34,13 @@ class RoomListViewController: UIViewController {
         
         configureView()
         bindViewModel()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    
+        //Configure Navigation Bar
+        title = "room.List.navigation.title".localized
     }
 
     //MARK: - View Configuration Methods -

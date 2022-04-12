@@ -5,13 +5,16 @@
 //  Created by Sagar Thummar on 08/04/2022.
 //
 
-import Foundation
+import UIKit
+import SquadComponent
+import SquadStyle
 
 struct Room: Identifiable, Codable {
-    let id: String
-    let maxOccupancy: Int
-    let isOccupied: Bool
-    let createdAt: Date
+    var id: String
+    var maxOccupancy: Int
+    var isOccupied: Bool
+    var createdAt: Date
+//    var color = SquadColor.randomColor
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import SquadStyle
 
 public class SquadImageView: UIImageView {
 
@@ -22,7 +23,25 @@ public class SquadImageView: UIImageView {
     }
     
     private func setup() {
+        backgroundColor = SquadColor.gainsboro.color
         
+        //Show Activity While Downloading Image
+        self.kf.indicatorType = .activity
     }
 
+    public func imgage(_ url: URL?, placeholder: UIImage?, errorCompletion: ((Error) -> Void)? = nil) {
+        self.kf.setImage(with: url, placeholder: placeholder, options: [.transition(.fade(0.25))]) { result in
+            switch result {
+                case .success(let response):
+                    self.image = response.image
+                    
+                case .failure(let error):
+                    errorCompletion?(error)
+            }
+        }
+    }
+    
+    public func cancel() {
+        self.kf.cancelDownloadTask()
+    }
 }

@@ -114,6 +114,9 @@
 		F3ED55692804DC9A00721649 /* SquadRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55682804DC9A00721649 /* SquadRouter.swift */; };
 		F3ED556A2804DC9A00721649 /* SquadRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55682804DC9A00721649 /* SquadRouter.swift */; };
 		F3ED556B2804DC9A00721649 /* SquadRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55682804DC9A00721649 /* SquadRouter.swift */; };
+		F3ED5576280546B600721649 /* SquadBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED5575280546B600721649 /* SquadBaseViewController.swift */; };
+		F3ED5577280546B600721649 /* SquadBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED5575280546B600721649 /* SquadBaseViewController.swift */; };
+		F3ED5578280546B600721649 /* SquadBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED5575280546B600721649 /* SquadBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +202,7 @@
 		F3ED55602804DC2A00721649 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		F3ED55642804DC4500721649 /* Launcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launcher.swift; sourceTree = "<group>"; };
 		F3ED55682804DC9A00721649 /* SquadRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadRouter.swift; sourceTree = "<group>"; };
+		F3ED5575280546B600721649 /* SquadBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadBaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,6 +382,7 @@
 		F35859F328008E3900E3C597 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F3ED55742805469700721649 /* Base */,
 				F3585A1928016F2200E3C597 /* OnBoarding */,
 				F35859F528008E5E00E3C597 /* Room */,
 				F35859F428008E5300E3C597 /* People */,
@@ -514,6 +519,14 @@
 				F385D4932804B6BD009E3698 /* MainAppCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F3ED55742805469700721649 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F3ED5575280546B600721649 /* SquadBaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -676,6 +689,7 @@
 				F358592F28004C7300E3C597 /* AppDelegate.swift in Sources */,
 				F385D47828044C4F009E3698 /* RoomCollectionViewCell.swift in Sources */,
 				F3585A8E280324C000E3C597 /* Box.swift in Sources */,
+				F3ED5576280546B600721649 /* SquadBaseViewController.swift in Sources */,
 				F35859EC280087CC00E3C597 /* PeopleListViewModel.swift in Sources */,
 				F3ED55612804DC2A00721649 /* UIApplicationExtension.swift in Sources */,
 				F3585A072800987000E3C597 /* BundleExtension.swift in Sources */,
@@ -700,6 +714,7 @@
 			files = (
 				F35859F1280087ED00E3C597 /* RoomViewModel.swift in Sources */,
 				F3ED55662804DC4500721649 /* Launcher.swift in Sources */,
+				F3ED5577280546B600721649 /* SquadBaseViewController.swift in Sources */,
 				F385D4902804A014009E3698 /* PeopleViewModel.swift in Sources */,
 				F385D47928044C51009E3698 /* RoomCollectionViewCell.swift in Sources */,
 				F3585A082800987000E3C597 /* BundleExtension.swift in Sources */,
@@ -735,6 +750,7 @@
 			files = (
 				F35859F2280087ED00E3C597 /* RoomViewModel.swift in Sources */,
 				F3ED55672804DC4500721649 /* Launcher.swift in Sources */,
+				F3ED5578280546B600721649 /* SquadBaseViewController.swift in Sources */,
 				F385D4912804A014009E3698 /* PeopleViewModel.swift in Sources */,
 				F385D47A28044C51009E3698 /* RoomCollectionViewCell.swift in Sources */,
 				F3585A092800987000E3C597 /* BundleExtension.swift in Sources */,
