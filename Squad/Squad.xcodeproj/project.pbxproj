@@ -12,6 +12,8 @@
 		59CAA2CB2805C37B0058AAC3 /* SquadPeopleTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2CA2805C37B0058AAC3 /* SquadPeopleTestCase.swift */; };
 		59CAA2CD2805C67E0058AAC3 /* SquadRoomListViewModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2CC2805C67E0058AAC3 /* SquadRoomListViewModelTestCase.swift */; };
 		59CAA2CF2805C8FB0058AAC3 /* SquadRoomTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2CE2805C8FB0058AAC3 /* SquadRoomTestCase.swift */; };
+		59CAA2D32805F4B90058AAC3 /* PeopleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2D22805F4B90058AAC3 /* PeopleUITests.swift */; };
+		59CAA2D5280636400058AAC3 /* RoomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2D4280636400058AAC3 /* RoomUITests.swift */; };
 		F358592F28004C7300E3C597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358592E28004C7300E3C597 /* AppDelegate.swift */; };
 		F358593128004C7300E3C597 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358593028004C7300E3C597 /* SceneDelegate.swift */; };
 		F358593328004C7300E3C597 /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358593228004C7300E3C597 /* RoomListViewController.swift */; };
@@ -99,6 +101,8 @@
 		59CAA2CA2805C37B0058AAC3 /* SquadPeopleTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadPeopleTestCase.swift; sourceTree = "<group>"; };
 		59CAA2CC2805C67E0058AAC3 /* SquadRoomListViewModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadRoomListViewModelTestCase.swift; sourceTree = "<group>"; };
 		59CAA2CE2805C8FB0058AAC3 /* SquadRoomTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadRoomTestCase.swift; sourceTree = "<group>"; };
+		59CAA2D22805F4B90058AAC3 /* PeopleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleUITests.swift; sourceTree = "<group>"; };
+		59CAA2D4280636400058AAC3 /* RoomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomUITests.swift; sourceTree = "<group>"; };
 		F358592B28004C7300E3C597 /* Squad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F358592E28004C7300E3C597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F358593028004C7300E3C597 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -238,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				F358595028004C7400E3C597 /* SquadUITests.swift */,
+				59CAA2D22805F4B90058AAC3 /* PeopleUITests.swift */,
+				59CAA2D4280636400058AAC3 /* RoomUITests.swift */,
 				F358595228004C7400E3C597 /* Info.plist */,
 			);
 			path = SquadUITests;
@@ -672,7 +678,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59CAA2D32805F4B90058AAC3 /* PeopleUITests.swift in Sources */,
 				F358595128004C7400E3C597 /* SquadUITests.swift in Sources */,
+				59CAA2D5280636400058AAC3 /* RoomUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

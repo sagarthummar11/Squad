@@ -47,6 +47,8 @@ class SquadTabBarViewController: UITabBarController {
         roomListNavigationController.tabBarItem = roomListViewController.tabItem
         
         viewControllers = [peopleListNavigationController, roomListNavigationController]
+        
+        tabBar.accessibilityIdentifier = "SquadTabBar"
     }
 }
 

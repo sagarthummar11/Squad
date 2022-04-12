@@ -96,6 +96,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="RoomListView"/>
                         <constraints>
                             <constraint firstItem="2Uo-0B-rta" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="DxE-5l-Nu1"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2Uo-0B-rta" secondAttribute="trailing" id="b45-xn-QrM"/>
