@@ -23,9 +23,11 @@
 
 /* Profile List Screen */
 "profile.list.navigation.title" = "Contact List";
+"profile.list.searchbar.placeholder" = "Search People";
 
 /* Room List Screen */
 "room.List.navigation.title" = "Rooms";
+"room.list.searchbar.placeholder" = "Search Room";
 
 /* Rool List Cell*/
 "room.list.cell.roomLabel.title" = "Room";

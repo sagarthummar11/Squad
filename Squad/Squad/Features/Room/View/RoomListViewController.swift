@@ -30,7 +30,7 @@ class RoomListViewController: SquadBaseViewController {
     fileprivate let roomSearchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search Room"
+        searchController.searchBar.placeholder = "room.list.searchbar.placeholder".localized
         return searchController
     }()
     

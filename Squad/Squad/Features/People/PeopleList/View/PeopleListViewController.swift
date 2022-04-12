@@ -28,7 +28,7 @@ class PeopleListViewController: SquadBaseViewController {
     fileprivate let peopleSearchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search People"
+        searchController.searchBar.placeholder = "profile.list.searchbar.placeholder".localized
         return searchController
     }()
     
@@ -105,7 +105,7 @@ extension PeopleListViewController: UITableViewDataSource, UITableViewDelegate {
         return peopleTableViewCell
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard let tableCell = cell as? PeopleTableViewCell else { return }
         tableCell.cancelDownload()
     }
