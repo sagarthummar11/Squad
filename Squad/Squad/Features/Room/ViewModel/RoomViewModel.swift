@@ -10,10 +10,13 @@ import Foundation
 struct RoomViewModel {
     
     //MARK: - Properties -
+    var displayRoomList: [Room] = []
     
     //Binding Properties
     let roomList: Box<[Room]> = Box([])
     let handleError: Box<SquadError?> = Box(nil)
+    let searchString: Box<String> = Box("")
+    var updateList: (() -> Void)? = nil
     
     //MARK:- Logical Operations -
     
@@ -28,6 +31,24 @@ struct RoomViewModel {
         }
     }
     
+    func filterRoom(forSearchString search: String) -> [Room] {
+        guard searchString.value.trimmed().count > 0 else {
+            return roomList.value
+        }
+        
+        return roomList.value.filter({ $0.id.lowercased().trimmed().contains(search.lowercased().trimmed()) })
+    }
+    
+    //Perform Search and Sort Operation
+    mutating func performSearchSortOperation() {
+        
+        //Search Action
+        displayRoomList = filterRoom(forSearchString: searchString.value)
+        
+        //Update UI Action
+        updateList?()
+    }
+    
     //MARK: - Table View Related Operations -
     
     var numberOfSections: Int {
@@ -35,11 +56,11 @@ struct RoomViewModel {
     }
     
     var numberOfItems: Int {
-        return roomList.value.count
+        return displayRoomList.count
     }
     
     func fetchRoom(_ indexPath: IndexPath) -> Room {
-        roomList.value[indexPath.row]
+        displayRoomList[indexPath.row]
     }
 
 }

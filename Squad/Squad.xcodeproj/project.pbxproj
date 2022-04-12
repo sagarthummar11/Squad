@@ -117,6 +117,9 @@
 		F3ED5576280546B600721649 /* SquadBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED5575280546B600721649 /* SquadBaseViewController.swift */; };
 		F3ED5577280546B600721649 /* SquadBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED5575280546B600721649 /* SquadBaseViewController.swift */; };
 		F3ED5578280546B600721649 /* SquadBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED5575280546B600721649 /* SquadBaseViewController.swift */; };
+		F3ED557E28055EE400721649 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED557D28055EE400721649 /* Debouncer.swift */; };
+		F3ED557F28055EE400721649 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED557D28055EE400721649 /* Debouncer.swift */; };
+		F3ED558028055EE400721649 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED557D28055EE400721649 /* Debouncer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +206,7 @@
 		F3ED55642804DC4500721649 /* Launcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launcher.swift; sourceTree = "<group>"; };
 		F3ED55682804DC9A00721649 /* SquadRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadRouter.swift; sourceTree = "<group>"; };
 		F3ED5575280546B600721649 /* SquadBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadBaseViewController.swift; sourceTree = "<group>"; };
+		F3ED557D28055EE400721649 /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +346,7 @@
 				F3585A0A280098A500E3C597 /* Constants */,
 				F35859D7280077ED00E3C597 /* Extensions */,
 				F3585A8D280324BF00E3C597 /* Box.swift */,
+				F3ED557D28055EE400721649 /* Debouncer.swift */,
 			);
 			path = Utiles;
 			sourceTree = "<group>";
@@ -393,8 +398,8 @@
 		F35859F428008E5300E3C597 /* People */ = {
 			isa = PBXGroup;
 			children = (
-				F385D48B28049F74009E3698 /* PeopleDetails */,
 				F385D48A28049F6C009E3698 /* PeopleList */,
+				F385D48B28049F74009E3698 /* PeopleDetails */,
 			);
 			path = People;
 			sourceTree = "<group>";
@@ -693,6 +698,7 @@
 				F35859EC280087CC00E3C597 /* PeopleListViewModel.swift in Sources */,
 				F3ED55612804DC2A00721649 /* UIApplicationExtension.swift in Sources */,
 				F3585A072800987000E3C597 /* BundleExtension.swift in Sources */,
+				F3ED557E28055EE400721649 /* Debouncer.swift in Sources */,
 				F3585A1C28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */,
 				F385D4942804B6BD009E3698 /* MainAppCoordinator.swift in Sources */,
 				F358593128004C7300E3C597 /* SceneDelegate.swift in Sources */,
@@ -735,6 +741,7 @@
 				F3585A152800FE5800E3C597 /* DateFormatterExtension.swift in Sources */,
 				F3585A722802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */,
 				F3D25F2628035B5700C13FCF /* UICollectionViewExtension.swift in Sources */,
+				F3ED557F28055EE400721649 /* Debouncer.swift in Sources */,
 				F3585A8B28030A8900E3C597 /* RoomListViewController.swift in Sources */,
 				F3ED556A2804DC9A00721649 /* SquadRouter.swift in Sources */,
 				F3ED55622804DC2A00721649 /* UIApplicationExtension.swift in Sources */,
@@ -771,6 +778,7 @@
 				F3585A162800FE5800E3C597 /* DateFormatterExtension.swift in Sources */,
 				F3585A732802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */,
 				F3D25F2728035B5700C13FCF /* UICollectionViewExtension.swift in Sources */,
+				F3ED558028055EE400721649 /* Debouncer.swift in Sources */,
 				F3585A8C28030A8900E3C597 /* RoomListViewController.swift in Sources */,
 				F3ED556B2804DC9A00721649 /* SquadRouter.swift in Sources */,
 				F3ED55632804DC2A00721649 /* UIApplicationExtension.swift in Sources */,

@@ -25,6 +25,13 @@ class PeopleListViewController: SquadBaseViewController {
                      selectedImage: AppImage.peopleListSelected.image)
     }()
     
+    fileprivate let peopleSearchController: UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search People"
+        return searchController
+    }()
+    
     //MARK:- View Controller Life Cycle Methods -
     
     override func viewDidLoad() {
@@ -44,10 +51,19 @@ class PeopleListViewController: SquadBaseViewController {
     //MARK: - View Configuration Methods -
     private func configureView() {
         viewModel.fetchPeople()
+        
+        //Configure Search bar
+        peopleSearchController.searchResultsUpdater = self
+        navigationItem.searchController = peopleSearchController
+        definesPresentationContext = true
     }
     
     private func bindViewModel() {
         viewModel.peopleList.bind { [weak self] peopleList in
+            self?.viewModel.performSearchSortOperation()
+        }
+        
+        viewModel.searchString.bind { [weak self] searchString in
             self?.viewModel.performSearchSortOperation()
         }
         
@@ -96,5 +112,13 @@ extension PeopleListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.didSelectPeople(indexPath)
+    }
+}
+
+//MARK:- UISearchResultsUpdating Methods -
+extension PeopleListViewController: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        viewModel.searchString.value = searchController.searchBar.text?.trimmed() ?? ""
     }
 }

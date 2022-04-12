@@ -27,6 +27,13 @@ class RoomListViewController: SquadBaseViewController {
                      selectedImage: AppImage.roomListSelected.image)
     }()
     
+    fileprivate let roomSearchController: UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Room"
+        return searchController
+    }()
+    
     //MARK:- View Controller Life Cycle Methods -
     
     override func viewDidLoad() {
@@ -41,6 +48,11 @@ class RoomListViewController: SquadBaseViewController {
     
         //Configure Navigation Bar
         title = "room.List.navigation.title".localized
+        
+        //Configure Search bar
+        roomSearchController.searchResultsUpdater = self
+        navigationItem.searchController = roomSearchController
+        definesPresentationContext = true
     }
 
     //MARK: - View Configuration Methods -
@@ -51,13 +63,21 @@ class RoomListViewController: SquadBaseViewController {
     private func bindViewModel() {
         
         viewModel.roomList.bind { [weak self] roomList in
-            DispatchQueue.main.async { [weak self] in
-                self?.roomListCollectionView.reloadData()
-            }
+            self?.viewModel.performSearchSortOperation()
+        }
+        
+        viewModel.searchString.bind { [weak self] searchString in
+            self?.viewModel.performSearchSortOperation()
         }
         
         viewModel.handleError.bind { [weak self] error in
             
+        }
+        
+        viewModel.updateList = { [weak self] in
+            DispatchQueue.main.async { [weak self] in
+                self?.roomListCollectionView.reloadData()
+            }
         }
     }
 }
@@ -100,5 +120,13 @@ extension RoomListViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         UIEdgeInsets(top: 12, left: 10, bottom: 10, right: 10)
+    }
+}
+
+//MARK:- UISearchResultsUpdating Methods -
+extension RoomListViewController: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        viewModel.searchString.value = searchController.searchBar.text?.trimmed() ?? ""
     }
 }
