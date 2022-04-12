@@ -20,7 +20,7 @@ struct RoomViewModel {
     
     //MARK:- Logical Operations -
     
-    func fetchRooms() {
+    func fetchRooms(handler: (() -> Void)? = nil) {
         NetworkManager().fetch(requestType: .roomList, responseType: [Room].self) { result in
             switch result {
             case .success(let rooms):
@@ -28,6 +28,7 @@ struct RoomViewModel {
             case .failure(let error):
                 handleError.value = SquadError(description: error.localizedDescription)
             }
+            handler?()
         }
     }
     

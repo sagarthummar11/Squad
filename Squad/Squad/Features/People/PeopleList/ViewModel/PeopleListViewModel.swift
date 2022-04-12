@@ -18,7 +18,9 @@ struct PeopleListViewModel {
     let handleError: Box<SquadError?> = Box(nil)
     let searchString: Box<String> = Box("")
     var updateList: (() -> Void)? = nil
-    var peopleSelected: ((People, PeopleCoordinator?) -> Void)
+    var peopleSelected: ((People, PeopleCoordinator?) -> Void)?
+    
+    init() { }
     
     init(onSelectPeople: @escaping ((People, PeopleCoordinator?) -> Void)) {
         self.peopleSelected = onSelectPeople
@@ -26,7 +28,7 @@ struct PeopleListViewModel {
     
     //MARK:- Logical Operations -
     
-    func fetchPeople() {
+    func fetchPeople(handler: (() -> ())? = nil) {
         NetworkManager().fetch(requestType: .peopleList, responseType: [People].self) { result in
             switch result {
             case .success(let peopleList):
@@ -35,11 +37,12 @@ struct PeopleListViewModel {
             case .failure(let error):
                 self.handleError.value = SquadError(description: error.localizedDescription)
             }
+            handler?()
         }
     }
     
     func filterPeople(forSearchString search: String) -> [People] {
-        guard searchString.value.trimmed().count > 0 else {
+        guard search.trimmed().count > 0 else {
             return peopleList.value
         }
         
@@ -72,6 +75,6 @@ struct PeopleListViewModel {
     
     func didSelectPeople(_ indexPath: IndexPath) {
         let people = displayPeopleList[indexPath.row]
-        peopleSelected(people, peopleCoordinator)
+        peopleSelected?(people, peopleCoordinator)
     }
 }

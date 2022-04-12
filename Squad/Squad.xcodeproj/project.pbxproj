@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59CAA2C72805B33F0058AAC3 /* SquadAPITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2C62805B33F0058AAC3 /* SquadAPITestCase.swift */; };
+		59CAA2C92805BA860058AAC3 /* SquadPeopleListViewModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2C82805BA860058AAC3 /* SquadPeopleListViewModelTestCase.swift */; };
+		59CAA2CB2805C37B0058AAC3 /* SquadPeopleTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2CA2805C37B0058AAC3 /* SquadPeopleTestCase.swift */; };
+		59CAA2CD2805C67E0058AAC3 /* SquadRoomListViewModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2CC2805C67E0058AAC3 /* SquadRoomListViewModelTestCase.swift */; };
+		59CAA2CF2805C8FB0058AAC3 /* SquadRoomTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2CE2805C8FB0058AAC3 /* SquadRoomTestCase.swift */; };
 		F358592F28004C7300E3C597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358592E28004C7300E3C597 /* AppDelegate.swift */; };
 		F358593128004C7300E3C597 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358593028004C7300E3C597 /* SceneDelegate.swift */; };
 		F358593328004C7300E3C597 /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358593228004C7300E3C597 /* RoomListViewController.swift */; };
@@ -89,6 +94,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		59CAA2C62805B33F0058AAC3 /* SquadAPITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadAPITestCase.swift; sourceTree = "<group>"; };
+		59CAA2C82805BA860058AAC3 /* SquadPeopleListViewModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadPeopleListViewModelTestCase.swift; sourceTree = "<group>"; };
+		59CAA2CA2805C37B0058AAC3 /* SquadPeopleTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadPeopleTestCase.swift; sourceTree = "<group>"; };
+		59CAA2CC2805C67E0058AAC3 /* SquadRoomListViewModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadRoomListViewModelTestCase.swift; sourceTree = "<group>"; };
+		59CAA2CE2805C8FB0058AAC3 /* SquadRoomTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadRoomTestCase.swift; sourceTree = "<group>"; };
 		F358592B28004C7300E3C597 /* Squad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F358592E28004C7300E3C597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F358593028004C7300E3C597 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -214,6 +224,11 @@
 			isa = PBXGroup;
 			children = (
 				F358594528004C7400E3C597 /* SquadTests.swift */,
+				59CAA2C62805B33F0058AAC3 /* SquadAPITestCase.swift */,
+				59CAA2C82805BA860058AAC3 /* SquadPeopleListViewModelTestCase.swift */,
+				59CAA2CA2805C37B0058AAC3 /* SquadPeopleTestCase.swift */,
+				59CAA2CC2805C67E0058AAC3 /* SquadRoomListViewModelTestCase.swift */,
+				59CAA2CE2805C8FB0058AAC3 /* SquadRoomTestCase.swift */,
 				F358594728004C7400E3C597 /* Info.plist */,
 			);
 			path = SquadTests;
@@ -644,7 +659,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59CAA2C72805B33F0058AAC3 /* SquadAPITestCase.swift in Sources */,
+				59CAA2C92805BA860058AAC3 /* SquadPeopleListViewModelTestCase.swift in Sources */,
+				59CAA2CD2805C67E0058AAC3 /* SquadRoomListViewModelTestCase.swift in Sources */,
+				59CAA2CF2805C8FB0058AAC3 /* SquadRoomTestCase.swift in Sources */,
 				F358594628004C7400E3C597 /* SquadTests.swift in Sources */,
+				59CAA2CB2805C37B0058AAC3 /* SquadPeopleTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

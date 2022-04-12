@@ -10,11 +10,13 @@ import Foundation
 enum RequestType {
     case peopleList
     case roomList
+    case invalidRequest // Testing Purpose
     
     var path: String {
         switch self {
             case .peopleList: return "v1/people"
             case .roomList: return "v1/rooms"
+            case .invalidRequest: return "/invalid"
         }
     }
 }
