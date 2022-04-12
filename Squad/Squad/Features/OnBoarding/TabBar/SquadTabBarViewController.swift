@@ -13,6 +13,13 @@ protocol TabDetailsProtocol {
 
 class SquadTabBarViewController: UITabBarController {
 
+    //MARK:- Properties -
+    var peopleListViewModel: PeopleListViewModel?
+    var peopleCoordinator: PeopleCoordinator?
+    
+    var roomListViewModel: RoomViewModel?
+    var roomListCoordinator: RoomCoordinator?
+    
     //MARK: - View Controller Life Cycle Methods -
     
     override func viewDidLoad() {
@@ -26,11 +33,17 @@ class SquadTabBarViewController: UITabBarController {
     private func configureView() {
         
         let peopleListViewController: PeopleListViewController = UIStoryboard.people.instantiate()
+        peopleListViewController.viewModel = peopleListViewModel
+        
         let peopleListNavigationController = SquadNavigationController(rootViewController: peopleListViewController)
+        peopleCoordinator = PeopleCoordinator(router: SquadRouter(navigationController: peopleListNavigationController))
+        peopleListViewController.viewModel.peopleCoordinator = peopleCoordinator
         peopleListNavigationController.tabBarItem = peopleListViewController.tabItem
         
         let roomListViewController: RoomListViewController = UIStoryboard.room.instantiate()
+        roomListViewController.viewModel = roomListViewModel
         let roomListNavigationController = SquadNavigationController(rootViewController: roomListViewController)
+        roomListCoordinator = RoomCoordinator(router: SquadRouter(navigationController: roomListNavigationController))
         roomListNavigationController.tabBarItem = roomListViewController.tabItem
         
         viewControllers = [peopleListNavigationController, roomListNavigationController]

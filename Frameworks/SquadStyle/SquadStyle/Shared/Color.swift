@@ -12,6 +12,15 @@ let SquadStyleBundle = Bundle(identifier: "com.vm.SquadStyle")
 
 public enum SquadColor: String, CaseIterable {
     case appTheme
+    case myrtleGreen
+    case gainsboro
+    case blackOlive
+    case yellowOrange
+    case cyberGraph
+    case vividTangerine
+    case greenSheen
+    case vegasGold
+    case honeydew
     
     public var color: UIColor {
         return access(self.rawValue)
@@ -19,6 +28,10 @@ public enum SquadColor: String, CaseIterable {
     
     private func access(_ string: String) -> UIColor {
         return UIColor(named: string, in: SquadStyleBundle, compatibleWith: .none) ?? .black
+    }
+    
+    public static var randomColor: UIColor {
+        return SquadColor.allCases.randomElement()?.color ?? .systemPink
     }
 }
 

@@ -6,10 +6,17 @@
 //
 
 import UIKit
+import SquadComponent
 
 class PeopleTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nameLabel: SquadLabel!
+    @IBOutlet weak var profileImageView: SquadImageView! {
+        didSet {
+            profileImageView.cornerRadius(profileImageView.bounds.height/2)
+        }
+    }
+    
     var people: People?
     
     override func awakeFromNib() {

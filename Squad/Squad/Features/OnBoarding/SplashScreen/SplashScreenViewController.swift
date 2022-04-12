@@ -10,17 +10,13 @@ import SquadStyle
 
 class SplashScreenViewController: UIViewController {
 
-    //MARK: - View Life Cycle Methods -
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    var router: SquadRouter?
+
+    static func navigate(completion: (() -> Void)?) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            let tabViewController: SquadTabBarViewController = UIStoryboard.onboarding.instantiate()
-            tabViewController.setAsRootViewController()
+            completion?()
         }
     }
-
 }
 
 

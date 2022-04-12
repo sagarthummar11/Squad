@@ -5,6 +5,6 @@
 //  Created by Sagar Thummar on 10/04/2022.
 //
 
-import Foundation
+import UIKit
 
 let SquadComponentBundle = Bundle(identifier: "com.vm.SquadComponent")

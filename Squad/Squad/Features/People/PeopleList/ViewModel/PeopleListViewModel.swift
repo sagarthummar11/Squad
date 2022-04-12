@@ -7,18 +7,22 @@
 
 import Foundation
 
-struct PeopleViewModel {
+struct PeopleListViewModel {
     
     //MARK: - Properties -
-    private(set) var screenTitle = "Contacts"
-     
     var displayPeopleList: [People] = []
+    var peopleCoordinator: PeopleCoordinator?
 
     //Binding Properties
     let peopleList: Box<[People]> = Box([])
     let handleError: Box<SquadError?> = Box(nil)
     let searchString: Box<String> = Box("")
     var updateList: (() -> Void)? = nil
+    var peopleSelected: ((People, PeopleCoordinator?) -> Void)
+    
+    init(onSelectPeople: @escaping ((People, PeopleCoordinator?) -> Void)) {
+        self.peopleSelected = onSelectPeople
+    }
     
     //MARK:- Logical Operations -
     
@@ -64,5 +68,10 @@ struct PeopleViewModel {
     
     func fetchPeople(_ indexPath: IndexPath) -> People {
         displayPeopleList[indexPath.row]
+    }
+    
+    func didSelectPeople(_ indexPath: IndexPath) {
+        let people = displayPeopleList[indexPath.row]
+        peopleSelected(people, peopleCoordinator)
     }
 }

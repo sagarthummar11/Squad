@@ -17,7 +17,7 @@ class PeopleListViewController: UIViewController {
         }
     }
     
-    private var viewModel = PeopleViewModel()
+    var viewModel: PeopleListViewModel!
     
     fileprivate let peopleTabItem = {
         UITabBarItem(title: "People", image: nil, selectedImage: nil)
@@ -78,5 +78,9 @@ extension PeopleListViewController: UITableViewDataSource, UITableViewDelegate {
         let people = viewModel.fetchPeople(indexPath)
         peopleTableViewCell.configure(people: people)
         return peopleTableViewCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.didSelectPeople(indexPath)
     }
 }
