@@ -31,7 +31,10 @@ class PeopleTableViewCell: UITableViewCell {
         
         //Assign A Value
         nameLabel.text = people.name
+        nameLabel.assign(accessibility: SquadAccessible(accessibleLabel: people.name))
+        
         profileImageView.imgage(people.imageURL, placeholder: AppImage.placeholder.image)
+        profileImageView.assign(accessibility: SquadAccessible(accessibleLabel: "\(people.name)'s Image"))
     }
     
     func cancelDownload() {

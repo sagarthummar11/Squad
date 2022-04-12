@@ -54,10 +54,19 @@ class PeopleDetailViewController: SquadBaseViewController {
     private func configureView() {
         
         profileImageView.imgage(people?.imageURL, placeholder: AppImage.placeholder.image)
+        profileImageView.assign(accessibility: SquadAccessible(accessibleLabel: "\(people?.name ?? "")'s Image"))
+        
         nameLabel.text = people?.name
+        nameLabel.assign(accessibility: SquadAccessible(accessibleLabel: "My Name is \(people?.name ?? "")"))
+        
         emailLabel.text = people?.displayEmail
+        emailLabel.assign(accessibility: SquadAccessible(accessibleLabel: "You can connect with me on \(people?.email ?? "")"))
+        
         jobTitleLabel.text = people?.displayJobTitle
+        jobTitleLabel.assign(accessibility: SquadAccessible(accessibleLabel: "I am a \(people?.jobtitle ?? "")"))
+        
         faviouriteColorLabel.text = people?.displayFavouriteColor
+        faviouriteColorLabel.assign(accessibility: SquadAccessible(accessibleLabel: "My Favourite Colour is \(people?.favouriteColor ?? "")"))
     }
     
     private func bindViewModel() {

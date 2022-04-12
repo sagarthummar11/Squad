@@ -13,9 +13,9 @@ class RoomCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var titleLabel: SquadLabel!
-    @IBOutlet weak var numberLabel: UILabel!
-    @IBOutlet weak var availabilityStatusLabel: UILabel!
-    @IBOutlet weak var maxOccupancyLabel: UILabel!
+    @IBOutlet weak var numberLabel: SquadLabel!
+    @IBOutlet weak var availabilityStatusLabel: SquadLabel!
+    @IBOutlet weak var maxOccupancyLabel: SquadLabel!
     
     var room: Room?
     
@@ -25,10 +25,18 @@ class RoomCollectionViewCell: UICollectionViewCell {
         containerView.cornerRadius(15)
         containerView.drawBorder(borderWidth: 1, color: SquadColor.gainsboro.color)
         
-        titleLabel.text = "room.list.cell.roomLabel.title".localized
+        let titleString = "room.list.cell.roomLabel.title".localized
+        titleLabel.text = titleString
+        titleLabel.assign(accessibility: SquadAccessible(accessibleLabel: "\(titleString) \(room.id)"))
+        
         numberLabel.text = room.id
+        numberLabel.assign(accessibility: SquadAccessible(isElelmentAccessibile: false))
+        
         availabilityStatusLabel.text = room.roomAvailability
+        availabilityStatusLabel.assign(accessibility: SquadAccessible(accessibleLabel: "Room is \(room.roomAvailability)"))
+        
         availabilityStatusLabel.textColor = room.availabilityColor
         maxOccupancyLabel.text = room.displayMaxOccupancy
+        maxOccupancyLabel.assign(accessibility: SquadAccessible(accessibleLabel: room.displayMaxOccupancy))
     }
 }
