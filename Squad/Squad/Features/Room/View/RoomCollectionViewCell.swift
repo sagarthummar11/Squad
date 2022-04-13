@@ -12,10 +12,10 @@ import SquadStyle
 class RoomCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var titleLabel: SquadLabel!
-    @IBOutlet weak var numberLabel: SquadLabel!
-    @IBOutlet weak var availabilityStatusLabel: SquadLabel!
-    @IBOutlet weak var maxOccupancyLabel: SquadLabel!
+    @IBOutlet weak var titleLabel: Headline2Label!
+    @IBOutlet weak var numberLabel: Title1Label!
+    @IBOutlet weak var availabilityStatusLabel: SmallHeadingLabel!
+    @IBOutlet weak var maxOccupancyLabel: BodySmallLabel!
     
     var room: Room?
     

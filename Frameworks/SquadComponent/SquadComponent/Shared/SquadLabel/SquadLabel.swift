@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SquadStyle
 
 public class SquadLabel: UILabel, SquadAccessibility {
     
@@ -46,7 +47,7 @@ public class SquadLabel: UILabel, SquadAccessibility {
         setup()
     }
     
-    private func setup() {
+    func setup() {
         self.textColor = .red
         accessibilityTraitsType = .staticText
     }

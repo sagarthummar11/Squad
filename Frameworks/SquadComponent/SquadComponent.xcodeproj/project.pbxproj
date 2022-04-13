@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		596B31F02806698A00C785FF /* SquadLabelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596B31EF2806698A00C785FF /* SquadLabelTypes.swift */; };
 		59CAA2D12805D18A0058AAC3 /* SquadAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2D02805D18A0058AAC3 /* SquadAccessibility.swift */; };
 		F358599F2800521400E3C597 /* SquadComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35859952800521400E3C597 /* SquadComponent.framework */; };
 		F35859A42800521400E3C597 /* SquadComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859A32800521400E3C597 /* SquadComponentTests.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		596B31EF2806698A00C785FF /* SquadLabelTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadLabelTypes.swift; sourceTree = "<group>"; };
 		59CAA2D02805D18A0058AAC3 /* SquadAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadAccessibility.swift; sourceTree = "<group>"; };
 		F35859952800521400E3C597 /* SquadComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SquadComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35859982800521400E3C597 /* SquadComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquadComponent.h; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				F385D47F28048187009E3698 /* SquadLabel.swift */,
+				596B31EF2806698A00C785FF /* SquadLabelTypes.swift */,
 			);
 			path = SquadLabel;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				596B31F02806698A00C785FF /* SquadLabelTypes.swift in Sources */,
 				F385D48428049A75009E3698 /* SquadImageView.swift in Sources */,
 				59CAA2D12805D18A0058AAC3 /* SquadAccessibility.swift in Sources */,
 				F3585A6E2802BDD300E3C597 /* SquadComponents.swift in Sources */,

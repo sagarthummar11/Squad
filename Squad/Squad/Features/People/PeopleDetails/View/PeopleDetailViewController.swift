@@ -18,10 +18,10 @@ class PeopleDetailViewController: SquadBaseViewController {
             profileImageView.drawBorder(borderWidth: 1.5, color: SquadColor.gainsboro.color)
         }
     }
-    @IBOutlet weak var nameLabel: SquadLabel!
-    @IBOutlet weak var emailLabel: SquadLabel!
-    @IBOutlet weak var jobTitleLabel: SquadLabel!
-    @IBOutlet weak var faviouriteColorLabel: SquadLabel!
+    @IBOutlet weak var nameLabel: Title1Label!
+    @IBOutlet weak var emailLabel: BodyLabel!
+    @IBOutlet weak var jobTitleLabel: Headline2Label!
+    @IBOutlet weak var faviouriteColorLabel: BodySmallLabel!
     
     var viewModel: PeopleViewModel!
     var people: People? {

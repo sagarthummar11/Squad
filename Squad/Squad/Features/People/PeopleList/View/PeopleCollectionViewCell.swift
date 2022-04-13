@@ -22,7 +22,7 @@ class PeopleCollectionViewCell: UICollectionViewCell {
             profileImageView.drawBorder(borderWidth: 1.5, color: SquadColor.gainsboro.color)
         }
     }
-    @IBOutlet weak var nameLabel: SquadLabel!
+    @IBOutlet weak var nameLabel: Title3Label!
     
     var people: People?
     
