@@ -5,9 +5,9 @@
         "package": "Kingfisher",
         "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
         "state": {
-          "branch": null,
-          "revision": "d06df9adf50ed8cde5786d935836a5f445f780ba",
-          "version": "6.3.1"
+          "branch": "version6-xcode13",
+          "revision": "2742b4de5036f9352d94c891495a3af3b9bdb67c",
+          "version": null
         }
       }
     ]

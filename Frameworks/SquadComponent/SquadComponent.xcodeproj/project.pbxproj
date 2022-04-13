@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		596B31F02806698A00C785FF /* SquadLabelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596B31EF2806698A00C785FF /* SquadLabelTypes.swift */; };
+		596B31F32806E98F00C785FF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 596B31F22806E98F00C785FF /* Kingfisher */; };
 		59CAA2D12805D18A0058AAC3 /* SquadAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2D02805D18A0058AAC3 /* SquadAccessibility.swift */; };
 		F358599F2800521400E3C597 /* SquadComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35859952800521400E3C597 /* SquadComponent.framework */; };
 		F35859A42800521400E3C597 /* SquadComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35859A32800521400E3C597 /* SquadComponentTests.swift */; };
 		F35859A62800521400E3C597 /* SquadComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = F35859982800521400E3C597 /* SquadComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3585A6E2802BDD300E3C597 /* SquadComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A6D2802BDD300E3C597 /* SquadComponents.swift */; };
-		F3653F99280400380047B322 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F3653F98280400380047B322 /* Kingfisher */; };
 		F385D48028048187009E3698 /* SquadLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D47F28048187009E3698 /* SquadLabel.swift */; };
 		F385D48428049A75009E3698 /* SquadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D48328049A75009E3698 /* SquadImageView.swift */; };
 		F3ED557A280548A800721649 /* SquadStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ED5579280548A800721649 /* SquadStyle.framework */; };
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3653F99280400380047B322 /* Kingfisher in Frameworks */,
+				596B31F32806E98F00C785FF /* Kingfisher in Frameworks */,
 				F3ED557A280548A800721649 /* SquadStyle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,7 +194,7 @@
 			);
 			name = SquadComponent;
 			packageProductDependencies = (
-				F3653F98280400380047B322 /* Kingfisher */,
+				596B31F22806E98F00C785FF /* Kingfisher */,
 			);
 			productName = SquadComponent;
 			productReference = F35859952800521400E3C597 /* SquadComponent.framework */;
@@ -246,7 +246,7 @@
 			);
 			mainGroup = F358598B2800521400E3C597;
 			packageReferences = (
-				F3653F97280400380047B322 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				596B31F12806E98F00C785FF /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = F35859962800521400E3C597 /* Products */;
 			projectDirPath = "";
@@ -559,20 +559,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F3653F97280400380047B322 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		596B31F12806E98F00C785FF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
-				kind = exactVersion;
-				version = 6.3.1;
+				branch = "version6-xcode13";
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F3653F98280400380047B322 /* Kingfisher */ = {
+		596B31F22806E98F00C785FF /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F3653F97280400380047B322 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 596B31F12806E98F00C785FF /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
