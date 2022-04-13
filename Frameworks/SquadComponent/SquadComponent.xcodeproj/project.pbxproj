@@ -443,6 +443,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vm.SquadComponent;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -473,6 +474,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vm.SquadComponent;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
