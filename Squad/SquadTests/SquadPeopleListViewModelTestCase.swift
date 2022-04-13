@@ -35,7 +35,7 @@ class SquadPeopleListViewModelTestCase: XCTestCase {
             
             XCTAssert(searchPeopleName.lowercased().trimmed().contains(searchString.lowercased().trimmed()), "Invalid Search Result")
             XCTAssert(searchPeopleResult.count == peopleListViewModel.displayPeopleList.count, "People Search Result Are Not Updated.")
-            XCTAssert(searchPeopleResult.count == peopleListViewModel.numberOfRows, "People search result are not update.")
+            XCTAssert(searchPeopleResult.count == peopleListViewModel.numberOfItems, "People search result are not update.")
         }
     }
 }

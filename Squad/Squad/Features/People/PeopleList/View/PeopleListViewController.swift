@@ -10,10 +10,10 @@ import UIKit
 class PeopleListViewController: SquadBaseViewController {
 
     //MARK:- Properties -
-    @IBOutlet weak var peopleTableView: UITableView! {
+    @IBOutlet weak var peopleCollectionView: UICollectionView! {
         didSet {
-            peopleTableView.dataSource = self
-            peopleTableView.delegate = self
+            peopleCollectionView.dataSource = self
+            peopleCollectionView.delegate = self
         }
     }
     
@@ -73,7 +73,7 @@ class PeopleListViewController: SquadBaseViewController {
         
         viewModel.updateList = { [weak self] in
             DispatchQueue.main.async { [weak self] in
-                self?.peopleTableView.reloadData()
+                self?.peopleCollectionView.reloadData()
             }
         }
     }
@@ -87,30 +87,45 @@ extension PeopleListViewController: TabDetailsProtocol {
     }
 }
 
-//MARK:- UITableView Data Source & Delegate Methods -
-extension PeopleListViewController: UITableViewDataSource, UITableViewDelegate {
+//MARK: - UICollectionView Data Source & Delegate Methods -
+extension PeopleListViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         viewModel.numberOfSections
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.numberOfRows
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        viewModel.numberOfItems
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let peopleTableViewCell: PeopleTableViewCell = peopleTableView.dequeueReusableCell(for: indexPath)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let peopleCell: PeopleCollectionViewCell = peopleCollectionView.dequeue(cellForItemAt: indexPath)
         let people = viewModel.fetchPeople(indexPath)
-        peopleTableViewCell.configure(people: people)
-        return peopleTableViewCell
+        peopleCell.configure(people)
+        return peopleCell
+    }
+}
+
+//MARK:- UICollectionView DataSource & Delegate Methods -
+extension PeopleListViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        if UIScreen.main.traitCollection.userInterfaceIdiom == .pad {
+            let cellSize = (collectionView.frame.width - 40)/3
+            let cellWidth = cellSize.clamped(cellSize, 300)
+            return CGSize(width: cellWidth, height: 100)
+        } else {
+            let cellWidth = collectionView.frame.width - 20
+            return CGSize(width: cellWidth, height: 100)
+        }
     }
     
-    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let tableCell = cell as? PeopleTableViewCell else { return }
-        tableCell.cancelDownload()
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         viewModel.didSelectPeople(indexPath)
     }
 }

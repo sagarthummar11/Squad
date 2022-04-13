@@ -4,9 +4,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,67 +18,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ihv-hN-iDb">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7bk-BV-wCE">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PeopleTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PeopleTableViewCell" rowHeight="182" id="MdG-R8-mPc" customClass="PeopleTableViewCell" customModule="Squad" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="182"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MdG-R8-mPc" id="EFB-vi-X0j">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="182"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tjs-2b-7VC">
+                                    <size key="itemSize" width="402" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PeopleCollectionViewCell" reuseIdentifier="PeopleCollectionViewCell" id="R1A-SK-pIz" customClass="PeopleCollectionViewCell" customModule="Squad" customModuleProvider="target">
+                                        <rect key="frame" x="6" y="0.0" width="402" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ocH-5d-ejw">
+                                            <rect key="frame" x="0.0" y="0.0" width="402" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Buq-cg-wIY">
-                                                    <rect key="frame" x="15" y="8" width="384" height="166"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3y-9C-74H">
+                                                    <rect key="frame" x="4" y="4" width="394" height="120"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yJh-zw-Flm" customClass="SquadImageView" customModule="SquadComponent">
-                                                            <rect key="frame" x="0.0" y="45.5" width="75" height="75"/>
-                                                            <color key="backgroundColor" name="gainsboro"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="75" id="7jm-lR-Wnf"/>
-                                                                <constraint firstAttribute="height" constant="75" id="snC-Wj-Oya"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="SquadLabel" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIM-qJ-bPH" customClass="SquadLabel" customModule="SquadComponent">
-                                                            <rect key="frame" x="95" y="73" width="289" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="4iC-Ka-QtG" customClass="SquadLabel" customModule="SquadComponent">
+                                                            <rect key="frame" x="100" y="50" width="279" height="20.5"/>
                                                             <accessibility key="accessibilityConfiguration" identifier="SquadLabel"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HDC-Ly-RCv" customClass="SquadImageView" customModule="SquadComponent">
+                                                            <rect key="frame" x="10" y="22.5" width="75" height="75"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="SquadImageView"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="75" id="5Y9-vt-moi"/>
+                                                                <constraint firstAttribute="width" constant="75" id="QiB-wj-38t"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
-                                                </stackView>
+                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                    <constraints>
+                                                        <constraint firstItem="HDC-Ly-RCv" firstAttribute="leading" secondItem="p3y-9C-74H" secondAttribute="leading" constant="10" id="1AH-e4-6YP"/>
+                                                        <constraint firstItem="4iC-Ka-QtG" firstAttribute="centerY" secondItem="HDC-Ly-RCv" secondAttribute="centerY" id="E8y-9h-JY5"/>
+                                                        <constraint firstItem="4iC-Ka-QtG" firstAttribute="leading" secondItem="HDC-Ly-RCv" secondAttribute="trailing" constant="15" id="j7w-yg-4NJ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4iC-Ka-QtG" secondAttribute="trailing" constant="15" id="lsH-1c-VvH"/>
+                                                        <constraint firstItem="HDC-Ly-RCv" firstAttribute="centerY" secondItem="p3y-9C-74H" secondAttribute="centerY" id="r1c-NC-cQF"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="Buq-cg-wIY" firstAttribute="leading" secondItem="EFB-vi-X0j" secondAttribute="leading" constant="15" id="LS9-8S-z3z"/>
-                                                <constraint firstItem="Buq-cg-wIY" firstAttribute="top" secondItem="EFB-vi-X0j" secondAttribute="top" constant="8" id="Wjw-Kc-sZU"/>
-                                                <constraint firstAttribute="trailing" secondItem="Buq-cg-wIY" secondAttribute="trailing" constant="15" id="WoJ-Yw-w9a"/>
-                                                <constraint firstAttribute="bottom" secondItem="Buq-cg-wIY" secondAttribute="bottom" constant="8" id="ZRd-io-tQQ"/>
+                                                <constraint firstItem="p3y-9C-74H" firstAttribute="top" secondItem="ocH-5d-ejw" secondAttribute="top" constant="4" id="4XK-3L-FZc"/>
+                                                <constraint firstAttribute="bottom" secondItem="p3y-9C-74H" secondAttribute="bottom" constant="4" id="Shr-dW-De2"/>
+                                                <constraint firstItem="p3y-9C-74H" firstAttribute="leading" secondItem="ocH-5d-ejw" secondAttribute="leading" constant="4" id="Sx7-t5-hGB"/>
+                                                <constraint firstAttribute="trailing" secondItem="p3y-9C-74H" secondAttribute="trailing" constant="4" id="XMh-gD-gXo"/>
                                             </constraints>
-                                        </tableViewCellContentView>
-                                        <accessibility key="accessibilityConfiguration" identifier="SquadTableViewCell"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="402" height="128"/>
                                         <connections>
-                                            <outlet property="nameLabel" destination="cIM-qJ-bPH" id="dLG-fq-HQq"/>
-                                            <outlet property="profileImageView" destination="yJh-zw-Flm" id="xhU-Kk-6Ew"/>
+                                            <outlet property="containerView" destination="p3y-9C-74H" id="2et-zr-xD5"/>
+                                            <outlet property="nameLabel" destination="4iC-Ka-QtG" id="ETe-ln-cDX"/>
+                                            <outlet property="profileImageView" destination="HDC-Ly-RCv" id="1bN-gs-lzm"/>
                                         </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <accessibility key="accessibilityConfiguration" identifier="PeopleListView"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ihv-hN-iDb" secondAttribute="trailing" id="8wt-bs-VQY"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ihv-hN-iDb" secondAttribute="bottom" id="Y9n-bd-Rzg"/>
-                            <constraint firstItem="ihv-hN-iDb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="iU8-aY-2V1"/>
-                            <constraint firstItem="ihv-hN-iDb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rfT-KP-xrI"/>
+                            <constraint firstItem="7bk-BV-wCE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="GuG-ws-Ttp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7bk-BV-wCE" secondAttribute="trailing" id="K2v-If-G3q"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="7bk-BV-wCE" secondAttribute="bottom" id="Zhd-Bk-PLS"/>
+                            <constraint firstItem="7bk-BV-wCE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="yOx-Mb-DV7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8bJ-DC-23T"/>
                     <connections>
-                        <outlet property="peopleTableView" destination="ihv-hN-iDb" id="aUq-R0-f1N"/>
+                        <outlet property="peopleCollectionView" destination="7bk-BV-wCE" id="Cez-Lg-Stw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -177,11 +193,11 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="gainsboro">
-            <color red="0.85490196078431369" green="0.85490196078431369" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

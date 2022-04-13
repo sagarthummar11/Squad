@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		596B31EB2806537C00C785FF /* PeopleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596B31EA2806537C00C785FF /* PeopleCollectionViewCell.swift */; };
+		596B31EC2806601A00C785FF /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358593228004C7300E3C597 /* RoomListViewController.swift */; };
+		596B31ED280660A600C785FF /* SquadComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; };
+		596B31EE280660A600C785FF /* SquadComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		59CAA2C72805B33F0058AAC3 /* SquadAPITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2C62805B33F0058AAC3 /* SquadAPITestCase.swift */; };
 		59CAA2C92805BA860058AAC3 /* SquadPeopleListViewModelTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2C82805BA860058AAC3 /* SquadPeopleListViewModelTestCase.swift */; };
 		59CAA2CB2805C37B0058AAC3 /* SquadPeopleTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2CA2805C37B0058AAC3 /* SquadPeopleTestCase.swift */; };
@@ -16,7 +20,6 @@
 		59CAA2D5280636400058AAC3 /* RoomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAA2D4280636400058AAC3 /* RoomUITests.swift */; };
 		F358592F28004C7300E3C597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358592E28004C7300E3C597 /* AppDelegate.swift */; };
 		F358593128004C7300E3C597 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358593028004C7300E3C597 /* SceneDelegate.swift */; };
-		F358593328004C7300E3C597 /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358593228004C7300E3C597 /* RoomListViewController.swift */; };
 		F358593628004C7300E3C597 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F358593428004C7300E3C597 /* Onboarding.storyboard */; };
 		F358593828004C7400E3C597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F358593728004C7400E3C597 /* Assets.xcassets */; };
 		F358593B28004C7400E3C597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F358593928004C7400E3C597 /* LaunchScreen.storyboard */; };
@@ -44,7 +47,6 @@
 		F3585A812802DCAE00E3C597 /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3585A802802DCAE00E3C597 /* People.storyboard */; };
 		F3585A852802E4A100E3C597 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */; };
 		F3585A8E280324C000E3C597 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A8D280324BF00E3C597 /* Box.swift */; };
-		F3585A9228032BF800E3C597 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A9128032BF800E3C597 /* PeopleTableViewCell.swift */; };
 		F3585A962803300D00E3C597 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585A952803300D00E3C597 /* UITableViewExtension.swift */; };
 		F385D47828044C4F009E3698 /* RoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D47728044C4F009E3698 /* RoomCollectionViewCell.swift */; };
 		F385D47D280479D2009E3698 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D47C280479D2009E3698 /* UIViewExtension.swift */; };
@@ -53,8 +55,6 @@
 		F385D4942804B6BD009E3698 /* MainAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385D4932804B6BD009E3698 /* MainAppCoordinator.swift */; };
 		F3B8049C2803431600BAC810 /* SquadStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F358598728004F4700E3C597 /* SquadStyle.framework */; };
 		F3B8049D2803431600BAC810 /* SquadStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F358598728004F4700E3C597 /* SquadStyle.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F3B96C56280344AA00BFEA22 /* SquadComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; };
-		F3B96C57280344AA00BFEA22 /* SquadComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F35859AF2800523800E3C597 /* SquadComponent.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F3D25F2528035B5700C13FCF /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D25F2428035B5700C13FCF /* UICollectionViewExtension.swift */; };
 		F3ED55612804DC2A00721649 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55602804DC2A00721649 /* UIApplicationExtension.swift */; };
 		F3ED55652804DC4500721649 /* Launcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED55642804DC4500721649 /* Launcher.swift */; };
@@ -88,7 +88,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F3B8049D2803431600BAC810 /* SquadStyle.framework in Embed Frameworks */,
-				F3B96C57280344AA00BFEA22 /* SquadComponent.framework in Embed Frameworks */,
+				596B31EE280660A600C785FF /* SquadComponent.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +96,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		596B31EA2806537C00C785FF /* PeopleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewCell.swift; sourceTree = "<group>"; };
 		59CAA2C62805B33F0058AAC3 /* SquadAPITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadAPITestCase.swift; sourceTree = "<group>"; };
 		59CAA2C82805BA860058AAC3 /* SquadPeopleListViewModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadPeopleListViewModelTestCase.swift; sourceTree = "<group>"; };
 		59CAA2CA2805C37B0058AAC3 /* SquadPeopleTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadPeopleTestCase.swift; sourceTree = "<group>"; };
@@ -142,7 +143,6 @@
 		F3585A802802DCAE00E3C597 /* People.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = People.storyboard; sourceTree = "<group>"; };
 		F3585A842802E4A100E3C597 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		F3585A8D280324BF00E3C597 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
-		F3585A9128032BF800E3C597 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		F3585A952803300D00E3C597 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		F385D47728044C4F009E3698 /* RoomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCollectionViewCell.swift; sourceTree = "<group>"; };
 		F385D47C280479D2009E3698 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B8049C2803431600BAC810 /* SquadStyle.framework in Frameworks */,
-				F3B96C56280344AA00BFEA22 /* SquadComponent.framework in Frameworks */,
+				596B31ED280660A600C785FF /* SquadComponent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				F35859F828008F0E00E3C597 /* PeopleListViewController.swift */,
-				F3585A9128032BF800E3C597 /* PeopleTableViewCell.swift */,
+				596B31EA2806537C00C785FF /* PeopleCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -635,17 +635,18 @@
 				F3585A962803300D00E3C597 /* UITableViewExtension.swift in Sources */,
 				F3ED55652804DC4500721649 /* Launcher.swift in Sources */,
 				F3585A712802CA2F00E3C597 /* SquadTabBarViewController.swift in Sources */,
-				F358593328004C7300E3C597 /* RoomListViewController.swift in Sources */,
 				F35859DF28007CDD00E3C597 /* Room.swift in Sources */,
 				F385D48F2804A014009E3698 /* PeopleViewModel.swift in Sources */,
 				F358592F28004C7300E3C597 /* AppDelegate.swift in Sources */,
 				F385D47828044C4F009E3698 /* RoomCollectionViewCell.swift in Sources */,
 				F3585A8E280324C000E3C597 /* Box.swift in Sources */,
 				F3ED5576280546B600721649 /* SquadBaseViewController.swift in Sources */,
+				596B31EB2806537C00C785FF /* PeopleCollectionViewCell.swift in Sources */,
 				F35859EC280087CC00E3C597 /* PeopleListViewModel.swift in Sources */,
 				F3ED55612804DC2A00721649 /* UIApplicationExtension.swift in Sources */,
 				F3585A072800987000E3C597 /* BundleExtension.swift in Sources */,
 				F3ED557E28055EE400721649 /* Debouncer.swift in Sources */,
+				596B31EC2806601A00C785FF /* RoomListViewController.swift in Sources */,
 				F3585A1C28016F7B00E3C597 /* SplashScreenViewController.swift in Sources */,
 				F385D4942804B6BD009E3698 /* MainAppCoordinator.swift in Sources */,
 				F358593128004C7300E3C597 /* SceneDelegate.swift in Sources */,
@@ -657,7 +658,6 @@
 				F385D48728049CA0009E3698 /* PeopleDetailViewController.swift in Sources */,
 				F35859DB28007ACC00E3C597 /* People.swift in Sources */,
 				F35859F0280087ED00E3C597 /* RoomViewModel.swift in Sources */,
-				F3585A9228032BF800E3C597 /* PeopleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,6 +908,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vm.SquadTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -929,6 +930,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vm.SquadTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -948,6 +950,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vm.SquadUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -967,6 +970,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vm.SquadUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

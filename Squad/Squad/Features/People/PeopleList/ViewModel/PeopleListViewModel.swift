@@ -55,6 +55,9 @@ struct PeopleListViewModel {
         //Search Action
         displayPeopleList = filterPeople(forSearchString: searchString.value)
         
+        //Sort Action
+        displayPeopleList = displayPeopleList.sorted(by: { $0.name.lowercased() < $1.name.lowercased() })
+        
         //Update UI Action
         updateList?()
     }
@@ -65,16 +68,16 @@ struct PeopleListViewModel {
         1
     }
     
-    var numberOfRows: Int {
+    var numberOfItems: Int {
         displayPeopleList.count
     }
     
     func fetchPeople(_ indexPath: IndexPath) -> People {
-        displayPeopleList[indexPath.row]
+        displayPeopleList[indexPath.item]
     }
     
     func didSelectPeople(_ indexPath: IndexPath) {
-        let people = displayPeopleList[indexPath.row]
+        let people = displayPeopleList[indexPath.item]
         peopleSelected?(people, peopleCoordinator)
     }
 }

@@ -62,7 +62,7 @@ class PeopleUITests: XCTestCase {
         
         guard contactListTab.isSelected else { return }
         
-        let peopleTableViewCell = app.cells["SquadTableViewCell"].firstMatch
+        let peopleTableViewCell = app.cells["PeopleCollectionViewCell"].firstMatch
         XCTAssertTrue(peopleTableViewCell.exists)
         
         peopleTableViewCell.tap() //Navigate user to Details Screen

@@ -1,32 +1,32 @@
 //
-//  PeopleTableViewCell.swift
+//  PeopleCollectionViewCell.swift
 //  Squad
 //
-//  Created by Sagar Thummar on 10/04/2022.
+//  Created by Sagar Thummar on 13/04/2022.
 //
 
 import UIKit
 import SquadComponent
 import SquadStyle
 
-class PeopleTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var nameLabel: SquadLabel!
-    @IBOutlet weak var profileImageView: SquadImageView! {
+class PeopleCollectionViewCell: UICollectionViewCell {
+    
+    @IBOutlet weak var containerView: UIView! {
+        didSet {
+            containerView.layer.cornerRadius = 10
+        }
+    }
+    @IBOutlet weak var profileImageView: SquadImageView!{
         didSet {
             profileImageView.cornerRadius(profileImageView.bounds.height/2)
             profileImageView.drawBorder(borderWidth: 1.5, color: SquadColor.gainsboro.color)
         }
     }
+    @IBOutlet weak var nameLabel: SquadLabel!
     
     var people: People?
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    func configure(people: People) {
+    func configure(_ people: People) {
         self.people = people
         
         //Assign A Value
@@ -35,6 +35,8 @@ class PeopleTableViewCell: UITableViewCell {
         
         profileImageView.imgage(people.imageURL, placeholder: AppImage.placeholder.image)
         profileImageView.assign(accessibility: SquadAccessible(accessibleLabel: "\(people.name)'s Image"))
+        
+        accessibilityIdentifier = "PeopleCollectionViewCell"
     }
     
     func cancelDownload() {
